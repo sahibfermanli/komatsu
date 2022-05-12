@@ -4,7 +4,7 @@
 <head>
     <base href="">
     <meta charset="utf-8"/>
-    <title>Komatsu</title>
+    <title>Komatsu | @yield('title')</title>
     <meta name="description"
           content="Metronic admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets."/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -120,6 +120,7 @@
             <!--begin::Header-->
             <x-backend.header></x-backend.header>
             <!--end::Header-->
+            @yield('content')
             <!--begin::Footer-->
             <x-backend.footer></x-backend.footer>
             <!--end::Footer-->
