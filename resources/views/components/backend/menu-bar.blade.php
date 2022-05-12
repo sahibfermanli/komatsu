@@ -5,7 +5,7 @@
         <!--begin::Menu Nav-->
         <ul class="menu-nav">
             <li class="menu-item" aria-haspopup="true">
-                <a target="_blank" href="https://preview.keenthemes.com/metronic/demo1/builder.html"
+                <a href="{{route('backend.home')}}"
                    class="menu-link">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
@@ -24,7 +24,7 @@
 											</svg>
                                             <!--end::Svg Icon-->
 										</span>
-                    <span class="menu-text">Builder</span>
+                    <span class="menu-text">Home page</span>
                 </a>
             </li>
             <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">

@@ -11,12 +11,13 @@
         <!--begin::Header-->
         <div class="d-flex align-items-center mt-5">
             <div class="symbol symbol-100 mr-5">
-                <div class="symbol-label" style="background-image:url('{{asset("backend/assets/media/users/300_21.jpg")}}')"></div>
+                <div class="symbol-label"
+                     style="background-image:url('{{asset("backend/assets/media/users/300_21.jpg")}}')"></div>
                 <i class="symbol-badge bg-success"></i>
             </div>
             <div class="d-flex flex-column">
-                <a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">James Jones</a>
-                <div class="text-muted mt-1">Application Developer</div>
+                <a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">{{auth()->user()->name}} {{auth()->user()->surname}}</a>
+                <div class="text-muted mt-1">Admin</div>
                 <div class="navi mt-2">
                     <a href="#" class="navi-item">
 								<span class="navi-link p-0 pb-2">
@@ -37,10 +38,12 @@
                                             <!--end::Svg Icon-->
 										</span>
 									</span>
-									<span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
+									<span
+                                        class="navi-text text-muted text-hover-primary">{{auth()->user()->email}}</span>
 								</span>
                     </a>
-                    <a href="#" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
+                    <a href="{{route('logout')}}" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign
+                        Out</a>
                 </div>
             </div>
         </div>

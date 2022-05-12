@@ -1,12 +1,13 @@
 @extends('backend.app')
 
 @section('title', 'Home page')
+@section('path', 'Dashboard')
 
 @section('content')
     <div class="d-flex flex-column-fluid">
         <div class="container">
             <div class="row">
-                Komatsu Admin Panel Dashboard
+                <h5>Komatsu | Admin Panel</h5>
             </div>
         </div>
     </div>
