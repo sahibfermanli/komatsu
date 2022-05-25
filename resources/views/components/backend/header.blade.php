@@ -7,7 +7,7 @@
             <div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
                 <div class="d-flex align-items-center flex-wrap mr-2">
                     <!--begin::Page Title-->
-                    <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">@yield('path')</h5>
+                    <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">@yield('title')</h5>
                 </div>
             </div>
         </div>

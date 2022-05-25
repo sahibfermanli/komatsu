@@ -3,15 +3,15 @@
 <!--begin::Head-->
 <head>
     <meta charset="utf-8"/>
-    <title>Komatsu | @yield('title')</title>
+    <title>Komatsu | Admin panel | @yield('title')</title>
     <meta name="description"
           content="Metronic admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets."/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <!--begin::Fonts-->
+    <meta name="csrf-token" content="{{csrf_token()}}">    <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
     <!--end::Fonts-->
     <!--begin::Global Theme Styles(used by all pages)-->
-    <link href="{{asset('backend/assets/plugins/global/plugins.bundle.css" rel="stylesheet')}}" type="text/css"/>
+    <link href="{{asset('backend/assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('backend/assets/plugins/custom/prismjs/prismjs.bundle.css')}}" rel="stylesheet"
           type="text/css"/>
     <link href="{{asset('backend/assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css"/>
@@ -22,6 +22,8 @@
     <link href="{{asset('backend/assets/css/themes/layout/brand/dark.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('backend/assets/css/themes/layout/aside/dark.css')}}" rel="stylesheet" type="text/css"/>
     <!--end::Layout Themes-->
+    <link rel="stylesheet" href="{{asset("css/sweetalert2.min.css")}}">
+    <link rel="stylesheet" href="{{asset("backend/css/main.css")}}">
     @yield('css')
     <link rel="shortcut icon" href="{{asset('backend/assets/media/logos/favicon.ico')}}"/>
 </head>
@@ -129,6 +131,7 @@
     <!--end::Page-->
 </div>
 <x-backend.user-profile></x-backend.user-profile>
+@yield('modal')
 <!--end::Main-->
 <!--begin::Global Theme Bundle(used by all pages)-->
 <script src="{{asset('backend/assets/plugins/global/plugins.bundle.js')}}"></script>
@@ -139,7 +142,14 @@
 <!--end::Page Vendors-->
 <!--begin::Page Scripts(used by this page)-->
 <script src="{{asset('backend/assets/js/pages/widgets.js')}}"></script>
+<script src="{{asset('backend/js/variables.js')}}"></script>
+<script src="{{asset('backend/js/main.js')}}"></script>
+<script src="{{asset('js/ajax.js')}}"></script>
 <!--end::Page Scripts-->
+<script src="{{asset("js/sweetalert2.min.js")}}"></script>
+<script>
+    let HOST_URL = '{{config('app.url')}}';
+</script>
 @yield('js')
 </body>
 <!--end::Body-->
