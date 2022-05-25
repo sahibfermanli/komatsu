@@ -29,3 +29,17 @@ function form_error_meesage(errors) {
         'warning'
     )
 }
+
+function fill_select(datas, select_id, default_title = "None", selected = false) {
+    let options = '<option value="">' + default_title + '</option>'
+    for (let i = 0; i < datas.length; i++) {
+        let data = datas[i]
+        options += '<option value="' + data.id + '">' + data.title + '</option>>'
+    }
+    let thisSelect = $("#" + select_id)
+    thisSelect.html(options)
+
+    if (selected) {
+        thisSelect.val(selected);
+    }
+}

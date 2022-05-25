@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\User\UserListRequest;
+use App\Http\Requests\Backend\GeneralListRequest;
 use App\Http\Requests\Backend\User\UserStoreRequest;
 use App\Http\Requests\Backend\User\UserUpdateRequest;
 use App\Http\Resources\Backend\GeneralResource;
@@ -29,7 +29,7 @@ class UserController extends Controller
      * Display a listing of the resource.
      *
      */
-    public function list(UserListRequest $request): AnonymousResourceCollection
+    public function list(GeneralListRequest $request): AnonymousResourceCollection
     {
         $data = $request->validated();
         $search = $data['query']['search'] ?? null;

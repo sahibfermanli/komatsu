@@ -14,6 +14,7 @@ function sendRequest(url, method = "POST", data = null) {
 
     request.onreadystatechange = function () {
         if (request.readyState === 4) {
+            swal.close()
             let jsonData = JSON.parse(request.response);
 
             if(request.status === 200) {
