@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\HomeController;
+use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +23,13 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.', 'middleware' => ['auth'
         Route::post('/store', [CategoryController::class, 'store'])->name('store');
         Route::post('/update/{category}', [CategoryController::class, 'update'])->name('update');
         Route::delete('/delete/{category}', [CategoryController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => 'products', 'as' => 'products.'], static function () {
+        Route::get('/', [ProductController::class, 'index'])->name('index');
+        Route::get('/list', [ProductController::class, 'list'])->name('list');
+        Route::post('/store', [ProductController::class, 'store'])->name('store');
+        Route::post('/update/{product}', [ProductController::class, 'update'])->name('update');
+        Route::delete('/delete/{product}', [ProductController::class, 'destroy'])->name('destroy');
     });
 });

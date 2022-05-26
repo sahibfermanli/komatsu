@@ -2,29 +2,43 @@
 
 namespace App\Models;
 
+use App\Casts\Product\ImageCast;
 use App\Traits\ActionBy;
 use App\Traits\CreatedBy;
 use Dyrynda\Database\Support\CascadeSoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Category extends Model
+class Product extends Model implements HasMedia
 {
-    use HasFactory, SoftDeletes, ActionBy, CreatedBy, CascadeSoftDeletes;
+    use HasFactory, SoftDeletes, ActionBy, CreatedBy, InteractsWithMedia, CascadeSoftDeletes;
+
+    protected $casts = [
+        'image' => ImageCast::class
+    ];
+
+    protected array $cascadeDeletes = ['media'];
 
     protected $fillable = [
-        'parent_id',
+        'category_id',
         'name_az',
         'name_en',
         'name_ru',
+        'model',
+        'capacity',
+        'front',
+        'travel_speed',
+        'lifting_speed',
+        'outside_turning_radius',
+        'operating_weight',
+        'engine_power',
         'created_by',
     ];
-
-    protected array $cascadeDeletes = ['sub_categories'];
 
     public static function boot(): void
     {
@@ -39,18 +53,13 @@ class Category extends Model
         });
     }
 
-    public function parent(): BelongsTo
+    public function category(): BelongsTo
     {
-        return $this->belongsTo(__CLASS__, 'parent_id');
+        return $this->belongsTo(Category::class, 'category_id');
     }
 
-    public function sub_categories(): HasMany
+    public function registerMediaCollections(): void
     {
-        return $this->hasMany(__CLASS__, 'parent_id');
-    }
-
-    public function products(): HasMany
-    {
-        return $this->hasMany(Product::class, 'category_id');
+        $this->addMediaCollection('products')->singleFile();
     }
 }

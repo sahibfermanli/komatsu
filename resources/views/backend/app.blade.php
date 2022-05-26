@@ -142,6 +142,7 @@
 <!--end::Page Vendors-->
 <!--begin::Page Scripts(used by this page)-->
 <script src="{{asset('backend/assets/js/pages/widgets.js')}}"></script>
+<script src="{{asset('js/axios.min.js')}}"></script>
 <script src="{{asset('backend/js/variables.js')}}"></script>
 <script src="{{asset('backend/js/main.js')}}"></script>
 <script src="{{asset('js/ajax.js')}}"></script>

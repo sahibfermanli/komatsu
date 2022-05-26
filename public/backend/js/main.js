@@ -43,3 +43,7 @@ function fill_select(datas, select_id, default_title = "None", selected = false)
         thisSelect.val(selected);
     }
 }
+
+function image_preview(e, id = "product_image_div") {
+    $('#' + id).css('background-image', "url('" + URL.createObjectURL(e.files[0]) + "')")
+}
