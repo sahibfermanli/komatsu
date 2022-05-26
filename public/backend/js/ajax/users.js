@@ -124,7 +124,6 @@ jQuery(document).ready(function () {
 
 function send_data(e) {
     let action = $(e).attr('data-action-type');
-    let method = "POST"
     let url;
 
     if (action === 'update') {
@@ -133,22 +132,16 @@ function send_data(e) {
         url = thisForm.attr('data-action-add')
     }
 
-    let name = document.getElementById("name").value;
-    let surname = document.getElementById("surname").value;
-    let username = document.getElementById("username").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    let formData = new FormData()
 
-    let data = JSON.stringify({
-        "_token": csrf_token,
-        "name": name,
-        "surname": surname,
-        "username": username,
-        "email": email,
-        "password": password
-    });
+    formData.append('_token', csrf_token)
+    formData.append('name', document.getElementById("name").value)
+    formData.append('surname', document.getElementById("surname").value)
+    formData.append('username', document.getElementById("username").value)
+    formData.append('email', document.getElementById("email").value)
+    formData.append('password', document.getElementById("password").value)
 
-    sendRequest(url, method, data)
+    postData(url, formData)
 }
 
 function show_add_modal() {

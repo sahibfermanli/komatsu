@@ -133,8 +133,7 @@ jQuery(document).ready(function () {
 });
 
 function send_data(e) {
-    let action = $(e).attr('data-action-type');
-    let method = "POST"
+    let action = $(e).attr('data-action-type')
     let url;
 
     if (action === 'update') {
@@ -143,20 +142,15 @@ function send_data(e) {
         url = thisForm.attr('data-action-add')
     }
 
-    let parent_id = document.getElementById("parent_id").value;
-    let name_az = document.getElementById("name_az").value;
-    let name_en = document.getElementById("name_en").value;
-    let name_ru = document.getElementById("name_ru").value;
+    let formData = new FormData()
 
-    let data = JSON.stringify({
-        "_token": csrf_token,
-        "parent_id": parent_id,
-        "name_az": name_az,
-        "name_en": name_en,
-        "name_ru": name_ru,
-    });
+    formData.append('_token', csrf_token)
+    formData.append('parent_id', document.getElementById("parent_id").value)
+    formData.append('name_az', document.getElementById("name_az").value)
+    formData.append('name_en', document.getElementById("name_en").value)
+    formData.append('name_ru', document.getElementById("name_ru").value)
 
-    sendRequest(url, method, data)
+    postData(url, formData)
 }
 
 function show_add_modal() {

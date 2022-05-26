@@ -47,11 +47,8 @@ function deleteData(id) {
         .then(function (result) {
             if (result.value) {
                 let url = thisForm.attr('data-action-delete') + "/" + id;
-                let data = JSON.stringify({
-                    "_token": csrf_token
-                });
 
-                sendRequest(url, "DELETE", data)
+                deleteDataAxios(url)
             } else {
                 return false
             }
@@ -68,6 +65,46 @@ function postData(url, formData) {
     axios.post(url, formData, {
         headers: {
             'Content-Type': 'multipart/form-data',
+            'Accept': 'application/json'
+        }
+    })
+        .then(function (resp) {
+            swal.close()
+            if (resp.status === 200) {
+                form_submit_message(resp.data.message)
+            } else {
+                swal(
+                    'Oops!',
+                    'Server error!',
+                    'error'
+                )
+            }
+        })
+        .catch(function (resp) {
+            swal.close()
+            let response = resp.response
+            if (response.status === 422) {
+                form_error_meesage(response.data.errors)
+            } else {
+                swal(
+                    'Oops!',
+                    'Server error!',
+                    'error'
+                )
+            }
+        })
+}
+
+function deleteDataAxios(url) {
+    swal({
+        title: '<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><span class="sr-only">Please wait...</span>',
+        text: 'Loading, please wait...',
+        showConfirmButton: false
+    })
+
+    axios.delete(url, {
+        headers: {
+            'Content-Type': 'application/json',
             'Accept': 'application/json'
         }
     })

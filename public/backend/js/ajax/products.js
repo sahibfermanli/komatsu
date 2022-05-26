@@ -156,7 +156,7 @@ jQuery(document).ready(function () {
 });
 
 function send_data(e) {
-    let action = $(e).attr('data-action-type');
+    let action = $(e).attr('data-action-type')
     let url;
 
     if (action === 'update') {
