@@ -9,9 +9,9 @@
                         @endforeach
                     </select>
                     <ul class="topbar-office active">
-                        <li><i class="flaticon-telephone" aria-hidden="true"></i>Phone +994 12 562 43 37</li>
-                        <li><i class="flaticon-web" aria-hidden="true"></i> office@komatsu.az</li>
-                        <li><i class="flaticon-pin" aria-hidden="true"></i>Aliyar Aliyev str., 26A, Baku, Azerbaijan</li>
+                        <li><i class="flaticon-telephone" aria-hidden="true"></i>{{$settings->phone}}</li>
+                        <li><i class="flaticon-web" aria-hidden="true"></i>{{$settings->email}}</li>
+                        <li><i class="flaticon-pin" aria-hidden="true"></i>{{$settings->address}}</li>
                     </ul>
                 </div>
             </div>
@@ -46,11 +46,11 @@
             <div class="row">
                 <div class="site-logo col-md-3 col-sm-6 col-xs-6">
                     <a href="{{route('home')}}" class="logo">
-                        <img src="{{asset('frontend/image/logo.png')}}" alt="CargoHub" class="logo-light show-logo">
-                        <img src="{{asset('frontend/image/logo.png')}}" alt="CargoHub" class="logo-dark hide-logo">
+                        <img src="{{$settings->logo}}" alt="{{$settings->title}}" class="logo-light show-logo">
+                        <img src="{{$settings->logo}}" alt="{{$settings->title}}" class="logo-dark hide-logo">
                     </a>
-                    <h1 class="site-title"><a href="{{route('home')}}">KOMATSU</a></h1>
-                    <h2 class="site-description">Komatsu</h2>
+                    <h1 class="site-title"><a href="{{route('home')}}">{{$settings->title}}</a></h1>
+                    <h2 class="site-description">{{$settings->title}}</h2>
                 </div>
                 <x-frontend.menu-bar></x-frontend.menu-bar>
             </div>

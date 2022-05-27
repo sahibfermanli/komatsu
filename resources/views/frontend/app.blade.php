@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>@yield('title')</title>
+    <title>@if(View::hasSection('title'))@yield('title')@else{{$settings->title ?? ''}}@endif</title>
     <!-- Stylesheets -->
     <!-- bootstrap v3.3.6 css -->
     <link href="{{asset('frontend/css/bootstrap.css')}}" rel="stylesheet">
@@ -29,6 +29,9 @@
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{$settings->meta_description ?? ''}}" />
+    <meta name="og:description" content="{{$settings->meta_description ?? ''}}" />
+    <meta name="keywords" content="{{$settings->meta_keywords ?? ''}}">
     <link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     @yield('css')

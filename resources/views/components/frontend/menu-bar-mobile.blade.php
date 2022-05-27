@@ -49,8 +49,8 @@
             </ul>
         </li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="extra-menu-item menu-item-button-link">
-            <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>
-        </li>
+{{--        <li class="extra-menu-item menu-item-button-link">--}}
+{{--            <a href="request-a-quote.html" class="fh-btn btn">Get A Quote</a>--}}
+{{--        </li>--}}
     </ul>
 </div>
