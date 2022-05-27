@@ -1,8 +1,8 @@
 (function($) {
-		
-	
+
+
 	var mainwindow = $(window);
-	
+
     // rev-slider
     if (jQuery("#slider1").length) {
         jQuery("#slider1").revolution({
@@ -10,9 +10,9 @@
             sliderLayout:"fullwidth",
             delay:5000,
             navigation: {
-                  keyboardNavigation:"on", 
+                  keyboardNavigation:"on",
                   keyboard_direction:"horizontal",
-                  mouseScrollNavigation:"off",   
+                  mouseScrollNavigation:"off",
                   onHoverStop:"on",
                   arrows: {
 						style: 'zeus',
@@ -38,11 +38,11 @@
 			responsiveLevels:[1240,1024,778,480],
 			visibilityLevels:[1240,1024,778,480],
 			gridwidth:[1170,1024,778,480],
-			gridheight:[850,768,960,720]		
+			gridheight:[850,768,960,720]
 
         });
     };
-	
+
 	    // rev-slider
     if (jQuery("#slider2").length) {
         jQuery("#slider2").revolution({
@@ -50,9 +50,9 @@
             sliderLayout:"fullwidth",
             delay:5000,
             navigation: {
-                  keyboardNavigation:"on", 
+                  keyboardNavigation:"on",
                   keyboard_direction:"horizontal",
-                  mouseScrollNavigation:"off",   
+                  mouseScrollNavigation:"off",
                   onHoverStop:"on",
                   arrows: {
 						style: 'zeus',
@@ -89,9 +89,9 @@
             sliderLayout:"fullwidth",
             delay:5000,
             navigation: {
-                  keyboardNavigation:"on", 
+                  keyboardNavigation:"on",
                   keyboard_direction:"horizontal",
-                  mouseScrollNavigation:"off",   
+                  mouseScrollNavigation:"off",
                   onHoverStop:"on",
                   arrows: {
 						style: 'zeus',
@@ -120,15 +120,15 @@
 			gridheight:[800,768,960,720]
         });
     };
-	
+
 	//Hide Loading Box (Preloader)
 	function stylePreloader() {
 		if($('.preloader').length){
 			$('.preloader').delay(200).fadeOut(500);
-		}		
-    }	
-			
-	
+		}
+    }
+
+
 
 
 	// $(function(){
@@ -152,19 +152,19 @@
 	// });
 
 
-	
+
 	//Accordion Box
 	if($('.accordion-box').length){
 		$(".accordion-box").on('click', '.acc-btn', function() {
-			
+
 			var outerBox = $(this).parents('.accordion-box');
 			var target = $(this).parents('.accordion');
-			
+
 			if($(this).hasClass('active')!==true){
 			$('.accordion .acc-btn').removeClass('active');
-			
+
 			}
-			
+
 			if ($(this).next('.acc-content').is(':visible')){
 				return false;
 			}else{
@@ -172,28 +172,28 @@
 				$(outerBox).children('.accordion').removeClass('active-block');
 				$(outerBox).children('.accordion').children('.acc-content').slideUp(300);
 				target.addClass('active-block');
-				$(this).next('.acc-content').slideDown(300);	
+				$(this).next('.acc-content').slideDown(300);
 			}
-		});	
+		});
 	}
-	
+
 
 	  if ( $('#accordion > .panel').length) {
 		$('#accordion > .panel').on('show.bs.collapse', function (e) {
 			  var heading = $(this).find('.panel-heading');
 			  heading.addClass("active-panel");
-			  
+
 	});
 	$('#accordion > .panel').on('hidden.bs.collapse', function (e) {
         var heading = $(this).find('.panel-heading');
           heading.removeClass("active-panel");
     });
 	}
-	
-	
-  
-	
-	
+
+
+
+
+
 	//--service-list--
 	if ($('.slide-partener').length) {
 		$('.slide-partener').owlCarousel({
@@ -223,7 +223,7 @@
 					items:5
 				}
 			}
-		});    		
+		});
 	}
 
     //--letest-project--
@@ -254,8 +254,8 @@
 					items:1
 				}
 			}
-		});    		
-	}	
+		});
+	}
 
    //--partener--
 	if ($('.news-slide').length) {
@@ -285,9 +285,9 @@
 					items:3
 				}
 			}
-		});    		
-	}		
-	
+		});
+	}
+
    //--team--
 	if ($('.slideteam').length) {
 		$('.slideteam').owlCarousel({
@@ -316,8 +316,8 @@
 					items:4
 				}
 			}
-		});    		
-	}		
+		});
+	}
     //--team--
 	if ($('.slidetest4').length) {
 		$('.slidetest4').owlCarousel({
@@ -346,8 +346,8 @@
 					items:2
 				}
 			}
-		});    		
-	} 
+		});
+	}
 
     //--team--
 	if ($('.partener_slide2').length) {
@@ -377,10 +377,10 @@
 					items:2
 				}
 			}
-		});    		
-	} 
-	
-	
+		});
+	}
+
+
 	//LightBox / Fancybox
 	if($('.fancybox').length) {
 		$('.fancybox').fancybox({
@@ -391,14 +391,14 @@
 			}
 		});
 	}
-	
-  
 
-	
-	
-	
+
+
+
+
+
 		// FAQs
-	if($('.fp-faq').length){			
+	if($('.fp-faq').length){
 			$( '.fp-faq' ).on( 'click', 'h2', function() {
 				var $faq = $( this ).closest( '.fp-faq' );
 
@@ -407,8 +407,8 @@
 				} );
 			} );
 	}
-	if($('.fp-accordion').length){		
-		
+	if($('.fp-accordion').length){
+
 		$( '.fp-accordion' ).on( 'click', 'h2, .icons', function() {
 			var $faq = $( this ).closest( '.fp-accordion' );
 
@@ -416,10 +416,10 @@
 				$faq.toggleClass( 'active' );
 			} );
 		} );
-		}	
-	
-	
-	
+		}
+
+
+
 
 	//Update header style + Scroll to Top
 	function scrolltotop() {
@@ -432,7 +432,7 @@
 			}
 		}
 	}
-	
+
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
 		$(".scroll-to-target").on('click', function() {
@@ -441,14 +441,14 @@
 		   $('html, body').animate({
 			   scrollTop: $(target).offset().top
 			 }, 1000);
-	
+
 		});
 	}
 
 
 
 
-	
+
 	// slider-range
 	if($('#slider-range').length){
 	  $( function() {
@@ -463,10 +463,10 @@
 		});
 		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 		  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-	  });	
+	  });
 	 }
 
- 
+
     //Input Quantity Up & Down
     function quantity_changer() {
 		$('#quantity-holder').on('click', '.quantity-plus', function () {
@@ -494,7 +494,7 @@
 	}
 
 
-	
+
 	//counter number changer
 	function counter_number() {
 		var timer = $('.timer');
@@ -504,11 +504,11 @@
 			})
 		}
 	}
-	
-	
 
 
-			
+
+
+
 	/* ==========================================================================
 	   Contact Form Validation and Ajax
 	   ========================================================================== */
@@ -564,9 +564,7 @@
 				}
 			});
 		}
-	});			
-			
-			
+	});
 
 
 
@@ -575,47 +573,49 @@
 
 
 
-	
-	
-	  
+
+
+
+
+
 /* ==========================================================================
    When document is ready, do
    ========================================================================== */
-   
+
   $(document).on('ready', function() {
     counter_number();
     quantity_changer();
   });
 
-  
-  
+
+
 /* ==========================================================================
    When document is Scrollig, do
    ========================================================================== */
-  
+
   mainwindow.on('scroll', function() {
 	scrolltotop();
-    
+
   });
-  
+
 /* ==========================================================================
    When document is loading, do
    ========================================================================== */
-  
+
   mainwindow.on('load', function() {
     stylePreloader();
   });
-  
+
 
 /* ==========================================================================
    When Window is resizing, do
    ========================================================================== */
-  
+
   mainwindow.on('resize', function() {
-  });	  
-	  
-	  
-	  	
+  });
+
+
+
 
 })(window.jQuery);
 
@@ -624,3 +624,13 @@ $(document).ready(function() {
 		$(this).next('.sub-menu').toggle();
 	});
 });
+
+$(function(){
+    $('.selectpicker').selectpicker();
+});
+
+function change_local_language(e, url) {
+    let local_language = $(e).val();
+
+    window.location.href = url + '/' + local_language
+}

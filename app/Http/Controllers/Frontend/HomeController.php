@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Contracts\View\View;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
     public function index(): View
     {

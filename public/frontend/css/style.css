@@ -38,7 +38,7 @@
 **********************************************/
 
 
-/*** 
+/***
 
 ====================================================================
 	Reset
@@ -53,7 +53,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -875,7 +875,7 @@ div.aligncenter,
 .gallery-caption {
   display: block;
 }
-/*** 
+/***
 
 ====================================================================
 	preloader
@@ -2920,7 +2920,7 @@ p {
   padding-top: 80px;
   padding-bottom: 40px;
 }
-/*** 
+/***
 
 ====================================================================
 	services Section
@@ -3108,7 +3108,7 @@ p {
   color: #ff0000;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Projects Section
@@ -3230,7 +3230,7 @@ p {
   opacity: 1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	404 page
@@ -3433,7 +3433,7 @@ p {
 .error404.error404-no-bg .error-404 .search-form {
   margin: 0 auto;
 }
-/*** 
+/***
 
 ====================================================================
 	Back To Top
@@ -3499,7 +3499,7 @@ p {
 	opacity: 1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Style
@@ -3724,7 +3724,7 @@ p {
 .comment-awaiting-moderation {
   display: block;
 }
-/*** 
+/***
 
 ====================================================================
 	Sidebar Widgets
@@ -4319,7 +4319,7 @@ ul.service-menu .children li:last-child {
   color: #fff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Services
@@ -4431,7 +4431,7 @@ ul.service-menu .children li:last-child {
   border-color: #ff0000;
 }
 
-/*** 
+/***
 
 ====================================================================
 	sidebar project
@@ -4489,7 +4489,7 @@ ul.service-menu .children li:last-child {
 .latest-project-widget .fp-widget-thumb {
   display: inline-block;
 }
-/*** 
+/***
 
 ====================================================================
 	Contact location
@@ -4612,7 +4612,7 @@ ul.service-menu .children li:last-child {
 .cargo-contact-widget p {
   margin-bottom: 0;
 }
-/*** 
+/***
 
 ====================================================================
 	Footer
@@ -4838,7 +4838,7 @@ ul.service-menu .children li:last-child {
   float: right;
 }
 
-/*** 
+/***
 
 ====================================================================
 	 Carousel
@@ -5084,7 +5084,7 @@ ul.service-menu .children li:last-child {
   border-radius: 30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Shortcodes
@@ -5525,7 +5525,7 @@ ul.service-menu .children li:last-child {
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	service-box
@@ -5787,7 +5787,7 @@ ul.service-menu .children li:last-child {
   opacity: 0;
 }
 
-/*** 
+/***
 
 ====================================================================
 	contact-box
@@ -5859,7 +5859,7 @@ ul.service-menu .children li:last-child {
   color: #fff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Projects
@@ -6204,7 +6204,7 @@ ul.service-menu .children li:last-child {
 .fh-latest-post .owl-item {
   padding: 0 15px;
 }
-/*** 
+/***
 
 ====================================================================
 	Counter
@@ -6266,7 +6266,7 @@ ul.service-menu .children li:last-child {
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Testimonials
@@ -6413,7 +6413,7 @@ ul.service-menu .children li:last-child {
   right: 15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing
@@ -6547,7 +6547,7 @@ ul.service-menu .children li:last-child {
   display: block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services
@@ -6808,7 +6808,7 @@ ul.service-menu .children li:last-child {
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Team
@@ -6946,7 +6946,7 @@ ul.service-menu .children li:last-child {
   background-color: #ff0000;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Custom Quote
@@ -7006,3 +7006,10 @@ ul.service-menu .children li:last-child {
   margin: 0;
 }
 
+.office-location  button.btn.dropdown-toggle.btn-default {
+    color: #dde2dd;
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    bottom: 10px;
+}

@@ -30,6 +30,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     @yield('css')
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
@@ -70,8 +71,8 @@
 <script type="text/javascript" src="{{asset('frontend/js/navigation.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/js/parallax.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/js/slideanims.min.js')}}"></script>
-
 <script src="{{asset('frontend/js/scripts.min.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 <script src="{{asset('frontend/js/script.js')}}"></script>
 @yield('js')
 </body>
