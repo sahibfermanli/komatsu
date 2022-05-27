@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\LanguageController;
 use App\Http\Middleware\Frontend\LanguageMiddleware;
@@ -11,4 +12,5 @@ Route::get('/language/{locale}', [LanguageController::class, 'set_locale_languag
 Route::middleware(LanguageMiddleware::class)->group(function() {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about', [AboutController::class, 'index'])->name('about');
+    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 });
