@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\SocialController;
 use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,5 +32,13 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.', 'middleware' => ['auth'
         Route::post('/store', [ProductController::class, 'store'])->name('store');
         Route::post('/update/{product}', [ProductController::class, 'update'])->name('update');
         Route::delete('/delete/{product}', [ProductController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => 'socials', 'as' => 'socials.'], static function () {
+        Route::get('/', [SocialController::class, 'index'])->name('index');
+        Route::get('/list', [SocialController::class, 'list'])->name('list');
+        Route::post('/store', [SocialController::class, 'store'])->name('store');
+        Route::post('/update/{social}', [SocialController::class, 'update'])->name('update');
+        Route::delete('/delete/{social}', [SocialController::class, 'destroy'])->name('destroy');
     });
 });

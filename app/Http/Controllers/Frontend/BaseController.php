@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Social;
 use Illuminate\Support\Facades\View;
 
 class BaseController extends Controller
@@ -17,8 +18,13 @@ class BaseController extends Controller
             ->select('id', 'name_en as name')
             ->get();
 
+        $socials = Social::query()
+            ->select('icon', 'url')
+            ->get();
+
         View::share([
             'categories' => $categories,
+            'socials' => $socials,
             'local_languages' => $local_languages
         ]);
     }

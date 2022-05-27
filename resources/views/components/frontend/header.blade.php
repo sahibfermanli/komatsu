@@ -21,11 +21,14 @@
         <div class="topbar-right topbar-widgets text-right">
             <div class="widget cargohub-social-links-widget">
                 <div class="list-social style-1">
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-skype"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                    @foreach($socials as $social)
+                        <a href="{{$social->url}}" target="_blank"><i class="{{$social->icon}}"></i></a>
+                    @endforeach
+{{--                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>--}}
+{{--                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>--}}
+{{--                    <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>--}}
+{{--                    <a href="#" target="_blank"><i class="fa fa-skype"></i></a>--}}
+{{--                    <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>--}}
                 </div>
             </div>
 {{--            <div class="widget cargo-search-widget">--}}
