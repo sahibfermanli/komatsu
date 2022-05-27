@@ -8,7 +8,6 @@ use App\Http\Requests\Backend\Social\SocialStoreRequest;
 use App\Http\Resources\Backend\GeneralResource;
 use App\Http\Resources\Backend\Social\SocialsResource;
 use App\Models\Social;
-use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;

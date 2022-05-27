@@ -11,8 +11,7 @@
                     <ul class="topbar-office active">
                         <li><i class="flaticon-telephone" aria-hidden="true"></i>Phone +994 12 562 43 37</li>
                         <li><i class="flaticon-web" aria-hidden="true"></i> office@komatsu.az</li>
-                        <li><i class="flaticon-pin" aria-hidden="true"></i>Aliyar Aliyev str., 26A, Baku, Azerbaijan
-                        </li>
+                        <li><i class="flaticon-pin" aria-hidden="true"></i>Aliyar Aliyev str., 26A, Baku, Azerbaijan</li>
                     </ul>
                 </div>
             </div>
@@ -24,11 +23,6 @@
                     @foreach($socials as $social)
                         <a href="{{$social->url}}" target="_blank"><i class="{{$social->icon}}"></i></a>
                     @endforeach
-{{--                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>--}}
-{{--                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>--}}
-{{--                    <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>--}}
-{{--                    <a href="#" target="_blank"><i class="fa fa-skype"></i></a>--}}
-{{--                    <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>--}}
                 </div>
             </div>
 {{--            <div class="widget cargo-search-widget">--}}
