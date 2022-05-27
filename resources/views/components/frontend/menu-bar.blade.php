@@ -2,7 +2,7 @@
     <nav id="site-navigation" class="main-nav primary-nav nav">
         <ul class="menu">
             <li><a href="{{route("home")}}">Home</a></li>
-            <li class=""><a href="#">About us</a></li>
+            <li class=""><a href="{{route("about")}}">About us</a></li>
             <li class="has-children"><a href="" class="dropdown-toggle">PRODUCTS</a>
                 <ul class="sub-menu">
                     @foreach($categories as $category)
