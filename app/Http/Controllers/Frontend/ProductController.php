@@ -28,6 +28,6 @@ class ProductController extends BaseController
             ->where('slug', $product_slug)
             ->firstOrFail();
 
-        return view('frontend.products_info', compact('product'));
+        return view('frontend.product_info', compact('product'));
     }
 }

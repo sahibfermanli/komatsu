@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SocialController;
 use App\Http\Controllers\Backend\UserController;
@@ -41,6 +42,14 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.', 'middleware' => ['auth'
         Route::post('/store', [SocialController::class, 'store'])->name('store');
         Route::post('/update/{social}', [SocialController::class, 'update'])->name('update');
         Route::delete('/delete/{social}', [SocialController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => 'services', 'as' => 'services.'], static function () {
+        Route::get('/', [ServiceController::class, 'index'])->name('index');
+        Route::get('/list', [ServiceController::class, 'list'])->name('list');
+        Route::post('/store', [ServiceController::class, 'store'])->name('store');
+        Route::post('/update/{service}', [ServiceController::class, 'update'])->name('update');
+        Route::delete('/delete/{service}', [ServiceController::class, 'destroy'])->name('destroy');
     });
 
     Route::group(['prefix' => 'settings', 'as' => 'settings.'], static function () {

@@ -50,6 +50,9 @@ class CategoryController extends Controller
                     $query->where('name_az', 'LIKE', "%$search%");
                     $query->orWhere('name_en', 'LIKE', "%$search%");
                     $query->orWhere('name_ru', 'LIKE', "%$search%");
+                    $query->orWhere('description_az', 'LIKE', "%$search%");
+                    $query->orWhere('description_en', 'LIKE', "%$search%");
+                    $query->orWhere('description_ru', 'LIKE', "%$search%");
                 });
             })
             ->orderByDesc('id')
