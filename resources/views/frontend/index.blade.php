@@ -3,7 +3,60 @@
 @section('title', 'Home page')
 
 @section('content')
-    <x-frontend.slider></x-frontend.slider>
+    <section class="rev_slider_wrapper">
+        <div id="slider1" class="rev_slider" data-version="5.0">
+            <ul>
+                @foreach($sliders as $slider)
+                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                        data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                        data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="{{$slider->image}}" alt="" title="{{$slider->title}}"
+                             data-bgposition="center center"
+                             data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="0" class="rev-slidebg"
+                             data-no-retina>
+                        <!-- LAYERS -->
+
+                        <div class="tp-caption   tp-resizeme" id="slide-2-layer-9" data-x="['left','left','left','left']"
+                             data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                             data-voffset="['285','185','255','185']" data-width="none" data-height="none"
+                             data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image"
+                             data-responsive_offset="on"
+                             data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                             style="z-index: 5;"><img src="{{asset('frontend/image/slide-bg.png')}}" alt=""                                                  data-ww="['755px','755px','755px','755px']"
+                                                      data-hh="['446px','446px','446px','446px']" width="674" height="398"
+                                                      data-no-retina></div>
+
+                        <div class="tp-caption ch_title   tp-resizeme" id="slide-2-layer-1"
+                             data-x="['left','left','left','left']" data-hoffset="['40','40','40','40']"
+                             data-y="['top','top','top','top']" data-voffset="['340','250','320','220']"
+                             data-fontsize="['55','50','45','25']" data-lineheight="['55','50','45','25']" data-width="none"
+                             data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                             data-frames='[{"delay":200,"speed":500,"text_c":"transparent","bg_c":"transparent","use_text_c":false,"use_bg_c":false,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"use_text_c":false,"use_bg_c":false,"text_c":"transparent","bg_c":"transparent","frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                             style="z-index: 6; white-space: nowrap; letter-spacing: 0;">{{$slider->title}}
+                        </div>
+
+                        <div class="tp-caption ch_content   tp-resizeme" id="slide-2-layer-3"
+                             data-x="['left','left','left','left']" data-hoffset="['40','40','40','40']"
+                             data-y="['top','top','top','top']" data-voffset="['505','415','480','355']"
+                             data-fontsize="['24','24','24','18']" data-width="none" data-height="none"
+                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                             data-frames='[{"delay":600,"speed":700,"text_c":"transparent","bg_c":"transparent","use_text_c":false,"use_bg_c":false,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":700,"use_text_c":false,"use_bg_c":false,"text_c":"transparent","bg_c":"transparent","frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                             style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </section>
 
     <div class="welcomesec secpadd">
         <div class="container">
@@ -126,7 +179,7 @@
     <section class="whychoose-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-6  secpaddlf">
+                <div class="col-lg-12 col-md-12  secpaddlf">
                     <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
                         <h2>Why Choosing us?</h2>
                     </div>
@@ -161,98 +214,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-md-6 quofrm1  secpaddlf">
-                    <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
-                        <h2>Send you request</h2>
-                    </div>
-                    <form>
-                        <div class="fh-form-1 fh-form">
-                            <div class="row fh-form-row">
-                                <div class="col-md-6 col-xs-12 col-sm-12">
-                                    <p class="field">
-                                        <select>
-                                            <option value="Services">Services</option>
-                                            <option value="Services 1">Services 1</option>
-                                            <option value="Services 2">Services 2</option>
-                                        </select>
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 col-sm-12">
-                                    <p class="field">
-                                        <input name="delivery-city" value="" placeholder="Delivery City*" type="text">
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 col-sm-12">
-                                    <p class="field">
-                                        <input name="distance" value="" placeholder="Distance*" type="text">
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 col-sm-12">
-                                    <p class="field">
-                                        <input name="weight" value="" placeholder="Weight*" type="text">
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 col-sm-12">
-                                    <p class="field">
-                                        <input name="your-name" value="" placeholder="Name*" type="text">
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-xs-12 col-sm-12">
-                                    <p class="field">
-                                        <input name="your-email" value="" placeholder="Email*" type="email">
-                                    </p>
-                                </div>
-                                <div class="col-md-12 col-xs-12 col-sm-12">
-                                    <p class="field single-field">
-                                        <textarea cols="40" placeholder="Message*"></textarea>
-                                    </p>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <p class="field submit">
-                                        <input value="Submit" class="fh-btn" type="submit">
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="partener-1 bluebg">
-        <div class="container">
-            <div class="fh-partner clearfix">
-                <div class="list-item slide-partener">
-                    <div class="partner-item">
-                        <div class="partner-content">
-                            <a href="#" target="_self"><img alt="1764" src="{{asset('frontend/image/partner-4.png')}}"></a>
-                        </div>
-                    </div>
-                    <div class="partner-item">
-                        <div class="partner-content">
-                            <a href="#" target="_self"><img alt="1763" src="{{asset('frontend/image/partner-4.png')}}"></a>
-                        </div>
-                    </div>
-                    <div class="partner-item">
-                        <div class="partner-content">
-                            <a href="#" target="_self"><img alt="1762" src="{{asset('frontend/image/partner-4.png')}}"></a>
-                        </div>
-                    </div>
-                    <div class="partner-item">
-                        <div class="partner-content">
-                            <a href="#" target="_self"><img alt="1761" src="{{asset('frontend/image/partner-4.png')}}"></a>
-                        </div>
-                    </div>
-                    <div class="partner-item">
-                        <div class="partner-content">
-                            <a href="#" target="_self"><img alt="1765" src="{{asset('frontend/image/partner-4.png')}}"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section class="partener-1 bluebg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="fh-partner clearfix">--}}
+{{--                <div class="list-item slide-partener">--}}
+{{--                    <div class="partner-item">--}}
+{{--                        <div class="partner-content">--}}
+{{--                            <a href="#" target="_self"><img alt="1764" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="partner-item">--}}
+{{--                        <div class="partner-content">--}}
+{{--                            <a href="#" target="_self"><img alt="1763" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="partner-item">--}}
+{{--                        <div class="partner-content">--}}
+{{--                            <a href="#" target="_self"><img alt="1762" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="partner-item">--}}
+{{--                        <div class="partner-content">--}}
+{{--                            <a href="#" target="_self"><img alt="1761" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="partner-item">--}}
+{{--                        <div class="partner-content">--}}
+{{--                            <a href="#" target="_self"><img alt="1765" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 @endsection
 
 @section('css')
