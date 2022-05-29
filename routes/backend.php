@@ -6,6 +6,7 @@ use App\Http\Controllers\Backend\MessageController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
+use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\SocialController;
 use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Route;
@@ -57,6 +58,14 @@ Route::group(['prefix' => 'backend', 'as' => 'backend.', 'middleware' => ['auth'
         Route::get('/', [MessageController::class, 'index'])->name('index');
         Route::get('/list', [MessageController::class, 'list'])->name('list');
         Route::delete('/delete/{message}', [MessageController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => 'sliders', 'as' => 'sliders.'], static function () {
+        Route::get('/', [SliderController::class, 'index'])->name('index');
+        Route::get('/list', [SliderController::class, 'list'])->name('list');
+        Route::post('/store', [SliderController::class, 'store'])->name('store');
+        Route::post('/update/{slider}', [SliderController::class, 'update'])->name('update');
+        Route::delete('/delete/{slider}', [SliderController::class, 'destroy'])->name('destroy');
     });
 
     Route::group(['prefix' => 'settings', 'as' => 'settings.'], static function () {
