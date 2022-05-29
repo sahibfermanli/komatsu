@@ -12,6 +12,8 @@ use App\Models\Category;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
 
 class CategoryController extends Controller
 {
@@ -39,7 +41,7 @@ class CategoryController extends Controller
         $current_page = $data['pagination']['page'] ?? 1;
 
         $response = Category::query()
-            ->with(['created_user', 'parent'])
+            ->with(['created_user', 'parent', 'media'])
             ->when($parent_id, static function ($query) use ($parent_id) {
                 $query->where('parent_id', $parent_id);
             })
@@ -75,7 +77,9 @@ class CategoryController extends Controller
      */
     public function store(CategoryStoreRequest $request): JsonResponse
     {
-        Category::query()->create($request->validated());
+        $category = Category::query()->create($request->validated());
+
+        $category->addMediaFromRequest('image')->toMediaCollection('categories');
 
         return response()->json(GeneralResource::make([
             'message' => 'New item added successfully!',
@@ -92,6 +96,17 @@ class CategoryController extends Controller
     public function update(CategoryUpdateRequest $request, Category $category): JsonResponse
     {
         $category->update($request->validated());
+
+        if($request->hasFile('image') && $request->file('image')?->isValid()) {
+            try {
+                $category->clearMediaCollection();
+                $category->addMediaFromRequest('image')->toMediaCollection('categories');
+            } catch (FileDoesNotExist|FileIsTooBig) {
+                return response()->json(GeneralResource::make([
+                    'message' => 'Selected item updated successfully but image cannot be updated!',
+                ]));
+            }
+        }
 
         return response()->json(GeneralResource::make([
             'message' => 'Selected item updated successfully!',

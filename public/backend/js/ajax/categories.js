@@ -71,10 +71,26 @@ let KTDatatableRemoteAjax = function () {
                     selector: false,
                     textAlign: 'center',
                 },
+                {
+                    field: 'image',
+                    title: 'Image',
+                    template: function (row) {
+                        let image = 'background-image:url(\'' + row.image + '\')';
+
+                        return '<div class="d-flex align-items-center">\
+								<div class="symbol symbol-40 flex-shrink-0">\
+									<div class="symbol-label" style="' + image + '"></div>\
+								</div>\
+							</div>';
+                    },
+                },
                 {field: 'parent', title: 'Parent'},
                 {field: 'name_az', title: 'Name (AZ)'},
                 {field: 'name_en', title: 'Name (EN)'},
                 {field: 'name_ru', title: 'Name (RU)'},
+                {field: 'description_az', title: 'Description (AZ)'},
+                {field: 'description_en', title: 'Description (EN)'},
+                {field: 'description_ru', title: 'Description (RU)'},
                 {field: 'slug', title: 'Slug'},
                 {field: 'created_by', title: 'Created by'},
                 {field: 'created_date', title: 'Created date'},
@@ -87,7 +103,7 @@ let KTDatatableRemoteAjax = function () {
                     autoHide: false,
                     template: function (row) {
                         return '\
-                        <button onclick=\'show_edit_modal(' + row.id + ',"' + row.parent_id + '", "' + row.name_az + '", "' + row.name_en + '", "' + row.name_ru + '")\' class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">\
+                        <button onclick=\'show_edit_modal(' + row.id + ',"' + row.parent_id + '", "' + row.image + '", "' + row.name_az + '", "' + row.name_en + '", "' + row.name_ru + '", "' + row.description_az + '", "' + row.description_en + '", "' + row.description_ru + '")\' class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">\
                             <span class="svg-icon svg-icon-md">\
                                 <svg width="24px" height="24px" viewBox="0 0 24 24">\
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
@@ -145,10 +161,14 @@ function send_data(e) {
     let formData = new FormData()
 
     formData.append('_token', csrf_token)
+    formData.append('image', document.getElementById("image").files[0] ?? null)
     formData.append('parent_id', document.getElementById("parent_id").value)
     formData.append('name_az', document.getElementById("name_az").value)
     formData.append('name_en', document.getElementById("name_en").value)
     formData.append('name_ru', document.getElementById("name_ru").value)
+    formData.append('description_az', document.getElementById("description_az").value)
+    formData.append('description_en', document.getElementById("description_en").value)
+    formData.append('description_ru', document.getElementById("description_ru").value)
 
     postData(url, formData)
 }
@@ -157,23 +177,37 @@ function show_add_modal() {
     $('.modal-title').html('Add')
     $("#form_submit_button").attr('data-action-type', 'add')
 
+    let category_image_div = $('#category_image_div')
+    let default_image = category_image_div.attr('data-default-image')
+    category_image_div.css('background-image', "url('" + default_image + "')")
+    $('#image').val('')
+    $('#image_remove').val('')
     $('#parent_id').val('')
     $('#name_az').val('')
     $('#name_en').val('')
     $('#name_ru').val('')
+    $('#description_az').val('')
+    $('#description_en').val('')
+    $('#description_ru').val('')
 
     $('#add-modal').modal('show')
 }
 
-function show_edit_modal(id, parent_id, name_az, name_en, name_ru) {
+function show_edit_modal(id, parent_id, image, name_az, name_en, name_ru, description_az, description_en, description_ru) {
     $('.modal-title').html('Edit')
     $("#form_submit_button").attr('data-action-type', 'update')
     thisForm.attr('data-selected-row-id', id)
 
+    $('#category_image_div').css('background-image', "url('" + image + "')")
+    $('#image').val('')
+    $('#image_remove').val('')
     $('#parent_id').val(parent_id)
     $('#name_az').val(name_az)
     $('#name_en').val(name_en)
     $('#name_ru').val(name_ru)
+    $('#description_az').val(description_az)
+    $('#description_en').val(description_en)
+    $('#description_ru').val(description_ru)
 
     $('#add-modal').modal('show')
 }

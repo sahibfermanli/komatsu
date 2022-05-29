@@ -27,9 +27,13 @@ class CategoryStoreRequest extends FormRequest
     {
         return [
             'parent_id' => ['nullable', 'integer', Rule::exists(Category::class, 'id')->whereNull('deleted_at')->whereNull('parent_id')],
+            'image' => ['required', 'image', 'mimes:jpg,png,jpeg'],
             'name_az' => ['required', 'string', 'max:100'],
             'name_en' => ['required', 'string', 'max:100'],
             'name_ru' => ['required', 'string', 'max:100'],
+            'description_az' => ['required', 'string', 'max:1000'],
+            'description_en' => ['required', 'string', 'max:1000'],
+            'description_ru' => ['required', 'string', 'max:1000'],
         ];
     }
 }

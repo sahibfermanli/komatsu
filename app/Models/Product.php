@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Casts\Product\ImageCast;
+use App\Casts\Product\NameCast;
 use App\Traits\ActionBy;
 use App\Traits\CreatedBy;
 use Dyrynda\Database\Support\CascadeSoftDeletes;
@@ -19,7 +20,8 @@ class Product extends Model implements HasMedia
     use HasFactory, SoftDeletes, ActionBy, CreatedBy, InteractsWithMedia, CascadeSoftDeletes;
 
     protected $casts = [
-        'image' => ImageCast::class
+        'image' => ImageCast::class,
+        'name' => NameCast::class,
     ];
 
     protected array $cascadeDeletes = ['media'];

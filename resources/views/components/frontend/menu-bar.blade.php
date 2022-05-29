@@ -3,10 +3,15 @@
         <ul class="menu">
             <li><a href="{{route("home")}}">Home</a></li>
             <li class=""><a href="{{route("about")}}">About us</a></li>
-            <li class="has-children"><a href="" class="dropdown-toggle">PRODUCTS</a>
+            <li class="has-children"><a href="#" class="dropdown-toggle">PRODUCTS</a>
                 <ul class="sub-menu">
+                    <li><a href="{{route("categories.index")}}">All categories</a></li>
                     @foreach($categories as $category)
-                        <li><a href="">{{$category->name}}</a></li>
+                        @if(count($category->sub_categories) > 0)
+                            <li><a href="{{route('categories.sub_categories', $category->slug)}}">{{$category->name}}</a></li>
+                        @else
+                            <li><a href="{{route('categories.products.index', $category->slug)}}">{{$category->name}}</a></li>
+                        @endif
                     @endforeach
                 </ul>
             </li>

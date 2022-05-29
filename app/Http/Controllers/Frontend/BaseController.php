@@ -10,13 +10,15 @@ use Illuminate\Support\Facades\View;
 
 class BaseController extends Controller
 {
-    public function __construct()
+    public function __construct($category_relations = ['sub_categories'])
     {
-        $settings = Setting::query()->find(1);
+        $settings = Setting::query()
+            ->with(['media'])
+            ->find(1);
 
         $categories = Category::query()
+            ->with($category_relations)
             ->whereNull('parent_id')
-            ->select('id', 'name_en as name')
             ->get();
 
         $socials = Social::query()

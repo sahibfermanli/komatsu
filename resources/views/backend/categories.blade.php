@@ -90,6 +90,24 @@
                      data-action-delete="{{route("backend.categories.destroy", "")}}">
                     <div class="modal-body">
                         <div class="card-body">
+                            <div class="image-input" id="kt_image_2">
+                                <div class="image-input-wrapper" id="category_image_div"
+                                     data-default-image="{{asset('backend/assets/media/users/blank.png')}}"
+                                     style="background-image: url({{asset('backend/assets/media/users/blank.png')}})">
+                                </div>
+                                <label
+                                    class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                    data-action="change" data-toggle="tooltip" title=""
+                                    data-original-title="Change image">
+                                    <i class="fa fa-pen icon-sm text-muted"></i>
+                                    <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" onchange="image_preview(this, 'category_image_div')"/>
+                                    <input type="hidden" id="image_remove" name="image_remove"/>
+                                </label>
+                                <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                      data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
+                                    <i class="ki ki-bold-close icon-xs text-muted"></i>
+                                </span>
+                            </div>
                             <div class="form-group row">
                                 <div class="col-lg-12">
                                     <label for="parent_id">Parent category:</label>
@@ -99,23 +117,35 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-12">
                                     <label for="name_az">Name (AZ):</label>
                                     <input id="name_az" type="text" class="form-control" name="name_az"
                                            placeholder="Name (AZ)"
                                            maxlength="100" required/>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-12">
+                                    <label for="description_az">Description (AZ):</label>
+                                    <textarea id="description_az" cols="30" rows="10" maxlength="1000" class="form-control" required placeholder="Description (AZ)"></textarea>
+                                </div>
+                                <div class="col-lg-12">
                                     <label for="name_en">Name (EN):</label>
                                     <input id="name_en" type="text" class="form-control" name="name_en"
                                            placeholder="Name (EN)"
                                            maxlength="100" required/>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-12">
+                                    <label for="description_en">Description (EN):</label>
+                                    <textarea id="description_en" cols="30" rows="10" maxlength="1000" class="form-control" required placeholder="Description (EN)"></textarea>
+                                </div>
+                                <div class="col-lg-12">
                                     <label for="name_ru">Name (RU):</label>
                                     <input id="name_ru" type="text" class="form-control" name="name_ru"
                                            placeholder="Name (RU)"
                                            maxlength="100" required/>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label for="description_ru">Description (RU):</label>
+                                    <textarea id="description_ru" cols="30" rows="10" maxlength="1000" class="form-control" required placeholder="Description (RU)"></textarea>
                                 </div>
                             </div>
                         </div>
