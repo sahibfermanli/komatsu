@@ -16,7 +16,7 @@ Route::middleware(LanguageMiddleware::class)->group(function() {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about', [AboutController::class, 'index'])->name('about');
     Route::get('/services', [ServiceController::class, 'index'])->name('services');
-    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
     Route::group(['prefix' => 'categories', 'as' => 'categories.'], static function () {
         Route::get('/', [CategoryController::class, 'index'])->name('index');
@@ -28,3 +28,5 @@ Route::middleware(LanguageMiddleware::class)->group(function() {
         });
     });
 });
+
+Route::post('contact/send-message', [ContactController::class, 'send_message'])->name('contact.send_message');

@@ -97,35 +97,33 @@
             <p class="paddbtm40 text-center">If you have any questions about the services we provide simply use the form
                 below. We try and respond to all
                 <br>queries and comments within 24 hours.</p>
-            <form method="post" action="" id="contact-form" novalidate="novalidate">
+            <div id="contact-form">
                 <div class="fh-form fh-form-3">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p class="field">
-                                <input name="name" placeholder="Your Name*" type="text">
+                                <input id="full_name" placeholder="Your Full Name*" type="text" required maxlength="100">
                             </p>
                             <p class="field">
-                                <input name="email" placeholder="Email Address*" type="email">
+                                <input id="email" placeholder="Email Address*" type="email" required maxlength="100">
                             </p>
                             <p class="field">
-                                <input name="phone" placeholder="Phone" type="text">
+                                <input id="phone" placeholder="Phone" type="text" required maxlength="20">
                             </p>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p class="field single-field">
-                                <textarea name="message" cols="40" rows="10" placeholder="Your Message..."></textarea>
+                                <textarea id="message" cols="40" rows="10" required maxlength="1000" placeholder="Your Message..."></textarea>
                             </p>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <p class="field submit">
-                                <button class="fh-btn" type="submit">Submit</button>
+                                <button class="fh-btn" type="button" onclick="send_data('{{route('contact.send_message')}}');">Submit</button>
                             </p>
                         </div>
-                        <div id="loading" style="display:none"><img src="{{asset('frontend/images/ajax-loader.png')}}" alt="loading"></div>
-                        <div class="contact-form-message"></div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
     <div class="google-map-area">
@@ -137,9 +135,13 @@
 @endsection
 
 @section('css')
-
+    <link rel="stylesheet" href="{{asset("css/sweetalert2.min.css")}}">
 @endsection
 
 @section('js')
-
+    <script src="{{asset('js/axios.min.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/ajax.js')}}"></script>
+    <script src="{{asset("js/sweetalert2.min.js")}}"></script>
+    <script src="{{asset("frontend/js/ajax/message.js")}}"></script>
 @endsection

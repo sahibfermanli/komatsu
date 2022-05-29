@@ -17,7 +17,7 @@
             </li>
             <li class=""><a href="{{route('services')}}">Services</a></li>
 
-            <li><a href="{{route('contact')}}">Contact</a></li>
+            <li><a href="{{route('contact.index')}}">Contact</a></li>
 {{--            <li class="extra-menu-item menu-item-button-link">--}}
 {{--                <a href="" class="fh-btn btn">Send Email</a>--}}
 {{--            </li>--}}

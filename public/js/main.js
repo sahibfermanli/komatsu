@@ -1,4 +1,4 @@
-function form_submit_message(message, thisModal = "#add-modal", reload = true, modal_close = true) {
+function form_submit_message(message, thisModal = "#add-modal", reload = true, modal_close = true, contact_form = false) {
     if (modal_close) {
         $(thisModal)
             .modal('hide')
@@ -13,6 +13,12 @@ function form_submit_message(message, thisModal = "#add-modal", reload = true, m
     if (reload) {
         $('#kt_datatable').KTDatatable().destroy();
         KTDatatableRemoteAjax.init();
+    }
+    if (contact_form) {
+        document.getElementById("full_name").value = ''
+        document.getElementById("email").value = ''
+        document.getElementById("phone").value = ''
+        document.getElementById("message").value = ''
     }
 }
 

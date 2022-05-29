@@ -55,7 +55,7 @@ function deleteData(id) {
         })
 }
 
-function postData(url, formData) {
+function postData(url, formData, reload = true, modal_close = true, contact_form = false) {
     swal({
         title: '<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><span class="sr-only">Please wait...</span>',
         text: 'Loading, please wait...',
@@ -71,7 +71,7 @@ function postData(url, formData) {
         .then(function (resp) {
             swal.close()
             if (resp.status === 200) {
-                form_submit_message(resp.data.message)
+                form_submit_message(resp.data.message, "#add-modal", reload, modal_close, contact_form)
             } else {
                 swal(
                     'Oops!',
