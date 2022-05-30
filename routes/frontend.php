@@ -27,6 +27,6 @@ Route::middleware(LanguageMiddleware::class)->group(function() {
             Route::get('/{category}/{product}', [ProductController::class, 'show'])->name('show');
         });
     });
-});
 
-Route::post('contact/send-message', [ContactController::class, 'send_message'])->name('contact.send_message');
+    Route::post('contact/send-message', [ContactController::class, 'send_message'])->name('contact.send_message');
+});
