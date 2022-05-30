@@ -1,6 +1,6 @@
 @extends('frontend.app')
 
-@section('title', 'About')
+@section('title', __('menu.about'))
 
 @section('content')
     <div class="page-header title-area">
@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="page-title">About</h1>
+                        <h1 class="page-title">@lang('menu.about')</h1>
                     </div>
                 </div>
             </div>
@@ -18,9 +18,9 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-xs-12 site-breadcrumb">
                         <nav class="breadcrumb">
-                            <a class="home" href="{{route('home')}}"><span>Home</span></a>
+                            <a class="home" href="{{route('home')}}"><span>@lang('menu.home')</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span>About</span>
+                            <span>@lang('menu.about')</span>
                         </nav>
                     </div>
                 </div>
@@ -38,11 +38,9 @@
                 <div class="col-md-7 col-sm-6">
                     <div class="abotinforgt">
                         <div class="fh-section-title clearfix  text-left version-dark paddbtm30">
-                            <h2>Who We are</h2>
+                            <h2>@lang('about.title')</h2>
                         </div>
-                        <p>«AzEquip» Company — imports and service of forklifts & the equipment of storage.</p>
-                        <p>Since 2006 the "AzEquip" Company is officiall dealer of KOMATSU Forklift Co Ltd. Since 2011
-                            is officiall dealer of KOMATSU CIS in Azerbaijan Republic.</p>
+                        @lang('about.description')
                     </div>
                 </div>
             </div>

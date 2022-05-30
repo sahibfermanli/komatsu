@@ -1,6 +1,6 @@
 @extends('frontend.app')
 
-@section('title', 'Products')
+@section('title', __('menu.products'))
 
 @section('content')
     <div class="page-header title-area">
@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="page-title">Products</h1>
+                        <h1 class="page-title">@lang('menu.products')</h1>
                     </div>
                 </div>
             </div>
@@ -18,11 +18,11 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-xs-12 site-breadcrumb">
                         <nav class="breadcrumb">
-                            <a class="home" href="{{route('home')}}"><span>Home</span></a>
+                            <a class="home" href="{{route('home')}}"><span>@lang('menu.home')</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <a class="home" href="{{route('categories.index')}}"><span>Categories</span></a>
+                            <a class="home" href="{{route('categories.index')}}"><span>@lang('menu.categories')</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span>Products</span>
+                            <span>@lang('menu.products')</span>
                         </nav>
                     </div>
                 </div>

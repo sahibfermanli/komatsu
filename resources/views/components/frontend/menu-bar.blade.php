@@ -1,11 +1,11 @@
 <div class="site-menu col-md-9 col-sm-6 col-xs-6">
     <nav id="site-navigation" class="main-nav primary-nav nav">
         <ul class="menu">
-            <li><a href="{{route("home")}}">Home</a></li>
-            <li class=""><a href="{{route("about")}}">About us</a></li>
-            <li class="has-children"><a href="#" class="dropdown-toggle">PRODUCTS</a>
+            <li><a href="{{route("home")}}">@lang('menu.home')</a></li>
+            <li class=""><a href="{{route("about")}}">@lang('menu.about')</a></li>
+            <li class="has-children"><a href="#" class="dropdown-toggle">@lang('menu.products')</a>
                 <ul class="sub-menu">
-                    <li><a href="{{route("categories.index")}}">All categories</a></li>
+                    <li><a href="{{route("categories.index")}}">@lang('menu.all_categories')</a></li>
                     @foreach($categories as $category)
                         @if(count($category->sub_categories) > 0)
                             <li><a href="{{route('categories.sub_categories', $category->slug)}}">{{$category->name}}</a></li>
@@ -15,8 +15,8 @@
                     @endforeach
                 </ul>
             </li>
-            <li><a href="{{route('services')}}">Services</a></li>
-            <li><a href="{{route('contact.index')}}">Contact</a></li>
+            <li><a href="{{route('services')}}">@lang('menu.services')</a></li>
+            <li><a href="{{route('contact.index')}}">@lang('menu.contact')</a></li>
 {{--            <li class="extra-menu-item menu-item-button-link">--}}
 {{--                <a href="" class="fh-btn btn">Send Email</a>--}}
 {{--            </li>--}}

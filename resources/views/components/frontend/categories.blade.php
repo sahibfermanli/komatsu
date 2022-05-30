@@ -1,8 +1,8 @@
 <div class="col-md-3">
     <div class="widget services-menu-widget">
-        <h4 class="widget-title">Our Products</h4>
+        <h4 class="widget-title">@lang('categories.our_products')</h4>
         <ul class="menu service-menu">
-            <li><a href="{{route("categories.index")}}">See All Categories</a></li>
+            <li><a href="{{route("categories.index")}}">@lang('categories.see_all_categories')</a></li>
             @foreach($categories as $category)
                 @if(count($category->sub_categories) > 0)
                     <li class="menu-item @if(Request::route('category') === $category->slug) current-menu-item @endif">
@@ -23,7 +23,7 @@
     </div>
 
     <div class="widget_text widget widget_custom_html">
-        <h4 class="widget-title">Our Brochures</h4>
+        <h4 class="widget-title">@lang('categories.our_brochures')</h4>
         <div class="textwidget custom-html-widget">
             <div class="download">
                 <div class="item-download">

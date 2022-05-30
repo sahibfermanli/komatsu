@@ -61,40 +61,35 @@
     <div class="welcomesec secpadd">
         <div class="container">
             <div class="fh-section-title clearfix  text-center version-dark paddbtm20">
-                <h2>Welcome to <span class="main-color">KOMATSU</span></h2>
+                <h2>@lang('home.welcome')</h2>
             </div>
-            <p class="haeadingpara text-center paddbtm40">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Architecto aspernatur beatae blanditiis dignissimos ex expedita fugiat id in, inventore nesciunt
-                pariatur possimus quod rem repudiandae similique soluta tempore ullam ut.</p>
+            <p class="haeadingpara text-center paddbtm40">@lang('home.welcome_desc')</p>
 
             <div class="welservices row">
                 <div class="col-md-4 col-sm-6">
                     <div class="fh-icon-box icon-type-theme_icon style-1 version-dark hide-button icon-left">
                         <span class="fh-icon"><i class="flaticon-transport-3"></i></span>
-                        <h4 class="box-title"><a href="#">Air Freight Forwarding</a></h4>
+                        <h4 class="box-title"><a href="#">@lang('home.service1')</a></h4>
                         <div class="desc">
-                            <p>As a leader in global air freight forwarding, OIA Global excels in providing tailored
-                                transportation</p>
+                            <p>@lang('home.service1_desc')</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="fh-icon-box icon-type-theme_icon style-1 version-dark hide-button icon-left">
                         <span class="fh-icon"><i class="flaticon-transport-4"></i></span>
-                        <h4 class="box-title"><a href="#">Ocean Freight Forwarding</a></h4>
+                        <h4 class="box-title"><a href="#">@lang('home.service2')</a></h4>
                         <div class="desc">
-                            <p>Ocean Freight plays perhaps the most vital role in most transportation and supply chain
-                                solutions.</p>
+                            <p>@lang('home.service2_desc')</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="fh-icon-box icon-type-theme_icon style-1 version-dark hide-button icon-left">
                         <span class="fh-icon"><i class="flaticon-transport-5"></i></span>
-                        <h4 class="box-title"><a href="#">Road Freight Forwarding</a></h4>
+                        <h4 class="box-title"><a href="#">@lang('home.service3')</a></h4>
                         <div class="desc">
-                            <p>KOMATSU are transported at some stage of their journey along the world’s roads where we
-                                give you a reassuring presence.</p>
+                            <p>@lang('home.service3_desc')</p>
                         </div>
                     </div>
                 </div>
@@ -107,14 +102,12 @@
             <div class="row paddbtm40">
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-section-title clearfix  text-left version-light">
-                        <h2>Our Special SERVICES</h2>
+                        <h2>@lang('home.special_services')</h2>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <div class="hdrgtpara lftredbrdr">
-                        <p>Our warehousing services are known nationwide to be one of the most reliable, safe and
-                            affordable, because we take pride in delivering the best of warehousing services, at the
-                            most reasonable prices.</p>
+                        <p>@lang('home.special_services_desc')</p>
                     </div>
                 </div>
             </div>
@@ -122,53 +115,50 @@
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-service-box icon-type-theme_icon style-1">
                         <span class="fh-icon"><i class="flaticon-open-cardboard-box"></i></span>
-                        <h4 class="service-title"><a href="#" class="link" target="_blank">Packaging And Storage</a>
+                        <h4 class="service-title"><a href="#" class="link" target="_blank">@lang('home.special_service1')</a>
                         </h4>
                         <div class="desc">
-                            <p>Package and store your things effectively and securely to make sure them in storage.</p>
+                            <p>@lang('home.special_service1_desc')</p>
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
                         <span class="fh-icon"><i class="flaticon-buildings"></i></span>
-                        <h4 class="service-title"><a href="#" class="link" target="_blank">Warehousing</a></h4>
+                        <h4 class="service-title"><a href="#" class="link" target="_blank">@lang('home.special_service2')</a></h4>
                         <div class="desc">
-                            <p>Package and store your things effectively and securely to make sure them in storage.</p>
+                            <p>@lang('home.special_service2_desc')</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-service-box icon-type-theme_icon style-1">
                         <span class="fh-icon"><i class="flaticon-transport-9"></i></span>
-                        <h4 class="service-title"><a href="#" class="link" target="_blank">LOREM</a></h4>
+                        <h4 class="service-title"><a href="#" class="link" target="_blank">@lang('home.special_service3')</a></h4>
                         <div class="desc">
-                            <p>Delivery of any freight from a place to another place quickly to save your cost and your
-                                time.</p>
+                            <p>@lang('home.special_service3_desc')</p>
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
                         <span class="fh-icon"><i class="flaticon-transport-2"></i></span>
-                        <h4 class="service-title"><a href="#" class="link" target="_blank">Door to Door Delivery</a>
+                        <h4 class="service-title"><a href="#" class="link" target="_blank">@lang('home.special_service4')</a>
                         </h4>
                         <div class="desc">
-                            <p>Our expertise in transport management and planning allows us to design a solution.</p>
+                            <p>@lang('home.special_service4_desc')</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-service-box icon-type-theme_icon style-1">
                         <span class="fh-icon"><i class="flaticon-international-delivery"></i></span>
-                        <h4 class="service-title"><a href="#" class="link" target="_blank">Worldwide Transport</a></h4>
+                        <h4 class="service-title"><a href="#" class="link" target="_blank">@lang('home.special_service5')</a></h4>
                         <div class="desc">
-                            <p>Specialises in international freight forwarding of merchandise and associated general
-                                logistic services.</p>
+                            <p>@lang('home.special_service5_desc')</p>
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
                         <span class="fh-icon"><i class="flaticon-transport-1"></i></span>
-                        <h4 class="service-title"><a href="#" class="link" target="_blank">Ground Transport</a></h4>
+                        <h4 class="service-title"><a href="#" class="link" target="_blank">@lang('home.special_service6')</a></h4>
                         <div class="desc">
-                            <p>Ground transportation options for all visitors, no matter your needs, schedule or
-                                destination.</p>
+                            <p>@lang('home.special_service6_desc')</p>
                         </div>
                     </div>
                 </div>
@@ -181,36 +171,34 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12  secpaddlf">
                     <div class="fh-section-title clearfix  text-left version-dark paddbtm40">
-                        <h2>Why Choosing us?</h2>
+                        <h2>@lang('home.why_choosing_us')</h2>
                     </div>
                     <div class="fh-icon-box  style-2 icon-left has-line">
                         <span class="fh-icon"><i class="flaticon-international-delivery"></i></span>
-                        <h4 class="box-title"><span>Global supply Chain Solutions</span></h4>
+                        <h4 class="box-title"><span>@lang('home.why_choosing_us1')</span></h4>
                         <div class="desc">
-                            <p>Efficiently unleash cross-media information without cross-media value.</p>
+                            <p>@lang('home.why_choosing_us1_desc')</p>
                         </div>
                     </div>
                     <div class="fh-icon-box  style-2 icon-left has-line">
                         <span class="fh-icon"><i class="flaticon-people"></i></span>
-                        <h4 class="box-title"><span>24 Hours - Technical Support</span></h4>
+                        <h4 class="box-title"><span>@lang('home.why_choosing_us2')</span></h4>
                         <div class="desc">
-                            <p>Specialises in international freight forwarding of merchandise and associated logistic
-                                services</p>
+                            <p>@lang('home.why_choosing_us2_desc')</p>
                         </div>
                     </div>
                     <div class="fh-icon-box  style-2 icon-left has-line">
                         <span class="fh-icon"><i class="flaticon-route"></i></span>
-                        <h4 class="box-title"><span>Mobile Shipment Tracking</span></h4>
+                        <h4 class="box-title"><span>@lang('home.why_choosing_us3')</span></h4>
                         <div class="desc">
-                            <p>We Offers intellgent concepts for road and tail and well as complex special transport
-                                services</p>
+                            <p>@lang('home.why_choosing_us3_desc')</p>
                         </div>
                     </div>
                     <div class="fh-icon-box  style-2 icon-left">
                         <span class="fh-icon"><i class="flaticon-open-cardboard-box"></i></span>
-                        <h4 class="box-title"><span>Careful Handling of Valuable Goods</span></h4>
+                        <h4 class="box-title"><span>@lang('home.why_choosing_us4')</span></h4>
                         <div class="desc">
-                            <p>Komatsu are transported at some stage of their journey along the world’s roads</p>
+                            <p>@lang('home.why_choosing_us4_desc')</p>
                         </div>
                     </div>
                 </div>

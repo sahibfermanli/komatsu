@@ -1,6 +1,6 @@
 @extends('frontend.app')
 
-@section('title', 'Contact')
+@section('title', __('menu.contact'))
 
 @section('content')
     <div class="page-header title-area">
@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="page-title">Contact</h1>
+                        <h1 class="page-title">@lang('menu.contact')</h1>
                     </div>
                 </div>
             </div>
@@ -18,9 +18,9 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-xs-12 site-breadcrumb">
                         <nav class="breadcrumb">
-                            <a class="home" href="{{route('home')}}"><span>Home</span></a>
+                            <a class="home" href="{{route('home')}}"><span>@lang('menu.home')</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span>Contact</span>
+                            <span>@lang('menu.contact')</span>
                         </nav>
                     </div>
                 </div>
@@ -32,20 +32,19 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="fh-section-title clearfix f25 text-left version-dark paddbtm40">
-                        <h2>Contact Details</h2>
+                        <h2>@lang('contact.title')</h2>
                     </div>
-                    <p class="margbtm30">If you have any questions about what we offer for consumers or for business,
-                        you can always email us or call us via the below details. We’ll reply within 24 hours.</p>
+                    <p class="margbtm30">@lang('contact.description')</p>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <div class="fh-contact-box type-address "><i class="flaticon-pin"></i>
-                                <h4 class="box-title">Visit our office</h4>
+                                <h4 class="box-title">@lang('contact.visit_our_office')</h4>
                                 <div class="desc">
                                     <p>{{$settings->address}}</p>
                                 </div>
                             </div>
                             <div class="fh-contact-box type-email "><i class="flaticon-business"></i>
-                                <h4 class="box-title">Mail Us at</h4>
+                                <h4 class="box-title">@lang('contact.mail')</h4>
                                 <div class="desc">
                                     <p>{{$settings->email}}</p>
                                 </div>
@@ -53,13 +52,13 @@
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <div class="fh-contact-box type-phone "><i class="flaticon-phone-call "></i>
-                                <h4 class="box-title">Call us on</h4>
+                                <h4 class="box-title">@lang('contact.phone')</h4>
                                 <div class="desc">
-                                    <p>Office: {{$settings->phone}}</p>
+                                    <p>{{$settings->phone}}</p>
                                 </div>
                             </div>
                             <div class="fh-contact-box type-social "><i class="flaticon-share"></i>
-                                <h4 class="box-title">We are social</h4>
+                                <h4 class="box-title">@lang('contact.social')</h4>
                                 <ul class="clearfix">
                                     @foreach($socials as $social)
                                         <li class="{{$social->name}}">
@@ -75,14 +74,14 @@
                 </div>
                 <div class="col-md-4">
                     <div class="opening-hours vc_opening-hours">
-                        <h3>WORKING HOURS</h3>
-                        <p>We look forward to seeing you</p>
+                        <h3>@lang('contact.working_hours')</h3>
+                        <p>@lang('contact.working_hours_desc')</p>
                         <ul>
-                            <li>Monday <span class="hour">9:00 am – 17.00 pm</span></li>
-                            <li>Tuesday<span class="hour">9:00 am – 18.00 pm</span></li>
-                            <li>Wednesday <span class="hour">9:00 am – 18.00 pm</span></li>
-                            <li>Thurs &amp; Friday<span class="hour">10:00 am – 16.00 pm</span></li>
-                            <li>Sat &amp; Sunday <span class="hour main-color">Closed</span></li>
+                            <li>@lang('contact.monday') <span class="hour">9:00 am – 17.00 pm</span></li>
+                            <li>@lang('contact.tuesday')<span class="hour">9:00 am – 18.00 pm</span></li>
+                            <li>@lang('contact.wednesday') <span class="hour">9:00 am – 18.00 pm</span></li>
+                            <li>@lang('contact.thursday') &amp; @lang('contact.friday')<span class="hour">10:00 am – 16.00 pm</span></li>
+                            <li>@lang('contact.saturday') &amp; @lang('contact.sunday') <span class="hour main-color">@lang('contact.closed')</span></li>
                         </ul>
                     </div>
                 </div>
@@ -92,33 +91,31 @@
     <section class="contactpagform graybg secpadd">
         <div class="container">
             <div class="fh-section-title clearfix f25 text-center version-dark paddbtm40">
-                <h2>Leave Your Message</h2>
+                <h2>@lang('message.title')</h2>
             </div>
-            <p class="paddbtm40 text-center">If you have any questions about the services we provide simply use the form
-                below. We try and respond to all
-                <br>queries and comments within 24 hours.</p>
+            <p class="paddbtm40 text-center">@lang('message.description')</p>
             <div id="contact-form">
                 <div class="fh-form fh-form-3">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p class="field">
-                                <input id="full_name" placeholder="Your Full Name*" type="text" required maxlength="100">
+                                <input id="full_name" placeholder="@lang('message.full_name')*" type="text" required maxlength="100">
                             </p>
                             <p class="field">
-                                <input id="email" placeholder="Email Address*" type="email" required maxlength="100">
+                                <input id="email" placeholder="@lang('message.email')*" type="email" required maxlength="100">
                             </p>
                             <p class="field">
-                                <input id="phone" placeholder="Phone" type="text" required maxlength="20">
+                                <input id="phone" placeholder="@lang('message.phone')" type="text" required maxlength="20">
                             </p>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <p class="field single-field">
-                                <textarea id="message" cols="40" rows="10" required maxlength="1000" placeholder="Your Message..."></textarea>
+                                <textarea id="message" cols="40" rows="10" required maxlength="1000" placeholder="@lang('message.message')..."></textarea>
                             </p>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <p class="field submit">
-                                <button class="fh-btn" type="button" onclick="send_data('{{route('contact.send_message')}}');">Submit</button>
+                                <button class="fh-btn" type="button" onclick="send_data('{{route('contact.send_message')}}');">@lang('message.submit')</button>
                             </p>
                         </div>
                     </div>

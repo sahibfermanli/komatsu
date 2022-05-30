@@ -1,6 +1,6 @@
 @extends('frontend.app')
 
-@section('title', 'Categories')
+@section('title', __('menu.categories'))
 
 @section('content')
     <div class="page-header title-area">
@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="page-title">Categories</h1>
+                        <h1 class="page-title">@lang('menu.categories')</h1>
                     </div>
                 </div>
             </div>
@@ -18,9 +18,9 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12 col-xs-12 site-breadcrumb">
                         <nav class="breadcrumb">
-                            <a class="home" href="{{route('home')}}"><span>Home</span></a>
+                            <a class="home" href="{{route('home')}}"><span>@lang('menu.home')</span></a>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span>Categories</span>
+                            <span>@lang('menu.categories')</span>
                         </nav>
                     </div>
                 </div>
@@ -34,13 +34,13 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="uthead lftredbrdr">
-                        <p>Складская техника</p>
+                        <p>@lang('categories.title')</p>
                     </div>
-                    <div class="mdltxtnrow">This page provides an overview of the advantages of  <span class="main-color">our warehouse technology</span></div>
+                    <div class="mdltxtnrow">@lang('categories.title2')</div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <p>Effective planning is essential for every warehouse. </p>
-                    <p>With the right equipment, warehouses and distribution centers can handle any logistical challenge</p>
+                    <p>@lang('categories.description')</p>
+                    <p>@lang('categories.description2')</p>
                 </div>
             </div>
         </div>
@@ -85,9 +85,9 @@
                 <div class="frs1box">
                     <div class="fh-icon-box  style-3 version-dark hide-button icon-left">
                         <span class="fh-icon"><i class="flaticon-internet"></i></span>
-                        <h4 class="box-title"><span>Fast worldwide delivery</span></h4>
+                        <h4 class="box-title"><span>@lang('categories.fast_worldwide_delivery')</span></h4>
                         <div class="desc">
-                            <p>There are many variations of passages of available, but the majority have suffered alteration in some form, by or randomised slightly believable.</p>
+                            <p>@lang('categories.fast_worldwide_delivery_desc')</p>
                         </div>
                     </div>
                 </div>
@@ -96,9 +96,9 @@
                 <div class="frs1box">
                     <div class="fh-icon-box  style-3 version-dark hide-button icon-left">
                         <span class="fh-icon"><i class="flaticon-shield"></i></span>
-                        <h4 class="box-title"><span>Safe and Secure Services</span></h4>
+                        <h4 class="box-title"><span>@lang('categories.safe_and_secure_services')</span></h4>
                         <div class="desc">
-                            <p>There are many variations of passages of available, but the majority have suffered alteration in some form, by or randomised slightly believable.</p>
+                            <p>@lang('categories.safe_and_secure_services')</p>
                         </div>
                     </div>
                 </div>
@@ -107,9 +107,9 @@
                 <div class="frs1box">
                     <div class="fh-icon-box  style-3 version-dark hide-button icon-left">
                         <span class="fh-icon"><i class="flaticon-technology"></i></span>
-                        <h4 class="box-title"><span>24/7 customer support</span></h4>
+                        <h4 class="box-title"><span>@lang('categories.customer_support')</span></h4>
                         <div class="desc">
-                            <p>There are many variations of passages of available, but the majority have suffered alteration in some form, by or randomised slightly believable.</p>
+                            <p>@lang('categories.customer_support_desc')</p>
                         </div>
                     </div>
                 </div>
@@ -130,11 +130,9 @@
                 <div class="col-md-6">
                     <div class="abotinforgt">
                         <div class="fh-section-title f30 clearfix  text-left version-dark paddbtm30">
-                            <h2>The Complete Solution</h2>
+                            <h2>@lang('categories.the_complete_solution')</h2>
                         </div>
-                        <p>Our warehousing services are known nationwide to be one of the most reliable, safe and affordable, because we take pride in delivering the best of warehousing services, at the most reasonable prices.</p>
-                        <p>Pleasure and praising pain was born and I will give you a complete account of system, and expound actual teachings occasionally circumstances.</p>
-                        <a href="#" class="fh-button button  fh-btn margtop30">More About Us</a>
+                        @lang('categories.the_complete_solution_desc')
                     </div>
                 </div>
             </div>
@@ -146,33 +144,33 @@
     <section class="three_steps secpadd graybg">
         <div class="container">
             <div class="fh-section-title clearfix f30  text-center version-dark margbtm40">
-                <h2>Three Step processing</h2>
+                <h2>@lang('categories.three_step_processing')</h2>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-xs-12">
                     <div class="fh-icon-box  style-2 version-dark  icon-center  service-process">
                         <span class="fh-icon"><i class="flaticon-box-1"></i></span>
-                        <h4 class="box-title"><span>Receive From Shipper</span></h4>
+                        <h4 class="box-title"><span>@lang('categories.receive_from_shipper')</span></h4>
                         <div class="desc">
-                            <p>Pursues or desires to obtain sed pain of it because it is pain circumstances.</p>
+                            <p>@lang('categories.receive_from_shipper_desc')</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-12">
                     <div class="fh-icon-box  style-2 version-dark  icon-center  service-process">
                         <span class="fh-icon"><i class="flaticon-delivery-truck"></i></span>
-                        <h4 class="box-title"><span>Safe & Secure Shipment</span></h4>
+                        <h4 class="box-title"><span>@lang('categories.safe_secure_shipment')</span></h4>
                         <div class="desc">
-                            <p>Except to obtain some advantage from it but who has any rights too find fault with enjoy.</p>
+                            <p>@lang('categories.safe_secure_shipment_desc')</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-xs-12">
                     <div class="fh-icon-box  style-2 version-dark  icon-center  service-process">
                         <span class="fh-icon"><i class="flaticon-box-2"></i></span>
-                        <h4 class="box-title"><span>Handover to Receiver </span></h4>
+                        <h4 class="box-title"><span>@lang('categories.handover_to_receiver')</span></h4>
                         <div class="desc">
-                            <p>At vero eos et accusamus et iusto sed odio dignissimos ducimus ut blanditiis</p>
+                            <p>@lang('categories.handover_to_receiver_desc')</p>
                         </div>
                     </div>
                 </div>

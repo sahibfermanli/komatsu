@@ -46,40 +46,40 @@
                         <div class="col-md-6">
                             <div class="abotinforgt">
                                 <div class="fh-section-title clearfix f25  text-left version-dark paddbtm40">
-                                    <h2>Description</h2>
+                                    <h2>@lang('products.description')</h2>
                                 </div>
                                 <table class="tr_btm">
                                     <tbody>
                                     <tr>
-                                        <td class="width_300px">Модель</td>
+                                        <td class="width_300px">@lang('products.model')</td>
                                         <td class="txt_bold">{{$product->model}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Грузоподьемность</td>
+                                        <td class="width_300px">@lang('products.capacity')</td>
                                         <td class="txt_bold">{{$product->capacity}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Передние / задние шины</td>
+                                        <td class="width_300px">@lang('products.front')</td>
                                         <td class="txt_bold">{{$product->front}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Скорость движения с / без груза</td>
+                                        <td class="width_300px">@lang('products.travel_speed')</td>
                                         <td class="txt_bold">{{$product->travel_speed}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Скорость подъема с / без груза</td>
+                                        <td class="width_300px">@lang('products.lifting_speed')</td>
                                         <td class="txt_bold">{{$product->lifting_speed}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Внешний радиус поворота</td>
+                                        <td class="width_300px">@lang('products.outside_turning_radius')</td>
                                         <td class="txt_bold">{{$product->outside_turning_radius}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Эксплуатационный вес</td>
+                                        <td class="width_300px">@lang('products.operating_weight')</td>
                                         <td class="txt_bold">{{$product->operating_weight}}</td>
                                     </tr>
                                     <tr>
-                                        <td class="width_300px">Мощность двигателя</td>
+                                        <td class="width_300px">@lang('products.engine_power')</td>
                                         <td class="txt_bold">{{$product->engine_power}}</td>
                                     </tr>
                                     </tbody>

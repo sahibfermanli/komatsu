@@ -6,15 +6,16 @@
                     <a href="#" class="footer-logo"><img src="{{$settings->logo}}" alt="{{$settings->title}}"></a>
                 </div>
                 <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-signs"></i>
-                    <p>Address : {{$settings->address}}</p>
-                    <h4> Baku, Azerbaijan</h4></div>
+                    <p>@lang('footer.address') :</p>
+                    <h4>{{$settings->address}}</h4>
+                </div>
                 <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-phone-call "></i>
-                    <p>Number :</p>
+                    <p>@lang('footer.phone') :</p>
                     <h4>{{$settings->phone}}</h4>
                 </div>
                 <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-clock-1"></i>
-                    <p>Opening Hours :</p>
-                    <h4>MON – FRI: 8AM – 6PM</h4></div>
+                    <p>@lang('footer.opening_hours') :</p>
+                    <h4>@lang('footer.monday_friday'): 8AM – 6PM</h4></div>
             </div>
         </div>
     </div>
@@ -23,11 +24,9 @@
             <div class="row">
                 <div class="footer-sidebar footer-1 col-xs-12 col-sm-6 col-md-3">
                     <div class="widget widget_text">
-                        <h4 class="widget-title">About KOMATSU</h4>
+                        <h4 class="widget-title">@lang('footer.about_title')</h4>
                         <div class="textwidget">
-                            <p>KOMATSU Services is a global supplier of transport and logistics solutions. We have
-                                offices in more than 20 countries and an international network of partners and
-                                agents.</p>
+                            <p>@lang('footer.about_desc')</p>
                         </div>
                     </div>
                     <div class="widget cargohub-social-links-widget">
@@ -40,10 +39,10 @@
                 </div>
                 <div class="footer-sidebar footer-2 col-xs-12 col-sm-6 col-md-3">
                     <div class="widget widget_nav_menu">
-                        <h4 class="widget-title">Useful Links</h4>
+                        <h4 class="widget-title">@lang('footer.useful_links')</h4>
                         <div class="menu-service-menu-container">
                             <ul class="menu">
-                                <li><a href="{{route("categories.index")}}">All categories</a></li>
+                                <li><a href="{{route("categories.index")}}">@lang('menu.all_categories')</a></li>
                                 @foreach($categories as $category)
                                     @if(count($category->sub_categories) > 0)
                                         <li>
