@@ -43,40 +43,47 @@
                         <h4 class="widget-title">Useful Links</h4>
                         <div class="menu-service-menu-container">
                             <ul class="menu">
-                                <li><a href="#">All Products</a></li>
-                                <li><a href="#">Reach truck</a></li>
-                                <li><a href="#">Diesel engine forklifts 5.0 t above</a></li>
-                                <li><a href="#">Electric forklifts</a></li>
-                                <li><a href="#">İC Engine trucks 1.5-5.0 t</a></li>
+                                <li><a href="{{route("categories.index")}}">All categories</a></li>
+                                @foreach($categories as $category)
+                                    @if(count($category->sub_categories) > 0)
+                                        <li>
+                                            <a href="{{route('categories.sub_categories', $category->slug)}}">{{$category->name}}</a>
+                                        </li>
+                                    @else
+                                        <li>
+                                            <a href="{{route('categories.products.index', $category->slug)}}">{{$category->name}}</a>
+                                        </li>
+                                    @endif
+                                @endforeach
                             </ul>
                         </div>
                     </div>
                 </div>
 
-{{--                <div class="footer-sidebar footer-4 col-xs-12 col-sm-6 col-md-3">--}}
-{{--                    <div class="widget widget_mc4wp_form_widget">--}}
-{{--                        <h4 class="widget-title">Our Newsletter</h4>--}}
-{{--                        <form>--}}
-{{--                            <div class="footform">--}}
-{{--                                <div class="fh-form-field">--}}
-{{--                                    <p>--}}
-{{--                                        Send today for tips and latest news and exclusive special offers.--}}
-{{--                                    </p>--}}
-{{--                                    <div class="subscribe">--}}
-{{--                                        <input name="EMAIL" placeholder="Enter Your Email" required="" type="email">--}}
-{{--                                        <input value="Send" type="submit">--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </form>--}}
-{{--                        <!-- / MailChimp for WordPress Plugin -->--}}
-{{--                    </div>--}}
-{{--                    <div class="widget widget_text">--}}
-{{--                        <div class="textwidget">--}}
-{{--                            <p>We don’t do spam and Your mail id very confidential.</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                {{--                <div class="footer-sidebar footer-4 col-xs-12 col-sm-6 col-md-3">--}}
+                {{--                    <div class="widget widget_mc4wp_form_widget">--}}
+                {{--                        <h4 class="widget-title">Our Newsletter</h4>--}}
+                {{--                        <form>--}}
+                {{--                            <div class="footform">--}}
+                {{--                                <div class="fh-form-field">--}}
+                {{--                                    <p>--}}
+                {{--                                        Send today for tips and latest news and exclusive special offers.--}}
+                {{--                                    </p>--}}
+                {{--                                    <div class="subscribe">--}}
+                {{--                                        <input name="EMAIL" placeholder="Enter Your Email" required="" type="email">--}}
+                {{--                                        <input value="Send" type="submit">--}}
+                {{--                                    </div>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                        </form>--}}
+                {{--                        <!-- / MailChimp for WordPress Plugin -->--}}
+                {{--                    </div>--}}
+                {{--                    <div class="widget widget_text">--}}
+                {{--                        <div class="textwidget">--}}
+                {{--                            <p>We don’t do spam and Your mail id very confidential.</p>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
             </div>
         </div>
     </div>
@@ -89,7 +96,6 @@
                 <div class="site-info">Copyright @ {{date('Y')}} All Right Reserved | Powered by <a
                         href="https://fermanli.net" target="_blank">www.fermanli.net</a></div>
             </div>
-
         </div>
     </div>
 </footer>
