@@ -6,8 +6,11 @@
     <section class="rev_slider_wrapper">
         <div id="slider1" class="rev_slider" data-version="5.0">
             <ul>
+                @php($odd = true)
                 @foreach($sliders as $slider)
-                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    @if($odd)
+                        @php($odd = false)
+                        <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                         data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
                         data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
                         data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
@@ -53,6 +56,55 @@
                              style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
                         </div>
                     </li>
+                    @else
+                        @php($odd = true)
+                        <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                            data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                            data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                            data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                            data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{$slider->image}}" alt="" title="{{$slider->title}}"
+                                 data-bgposition="center center"
+                                 data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="0" class="rev-slidebg"
+                                 data-no-retina>
+                            <!-- LAYERS -->
+
+                            <div class="tp-caption   tp-resizeme" id="slide-2-layer-9" data-x="['left','left','left','left']"
+                                 data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                                 data-voffset="['285','185','255','185']" data-width="none" data-height="none"
+                                 data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="image"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                 style="z-index: 5;"><img src="{{asset('frontend/image/slide-bg.png')}}" alt=""                                                  data-ww="['755px','755px','755px','755px']"
+                                                          data-hh="['446px','446px','446px','446px']" width="674" height="398"
+                                                          data-no-retina></div>
+
+                            <div class="tp-caption ch_title   tp-resizeme" id="slide-2-layer-1"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','40','40']"
+                                 data-y="['top','top','top','top']" data-voffset="['340','250','320','220']"
+                                 data-fontsize="['55','50','45','25']" data-lineheight="['55','50','45','25']" data-width="none"
+                                 data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                 data-frames='[{"delay":200,"speed":500,"text_c":"transparent","bg_c":"transparent","use_text_c":false,"use_bg_c":false,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"use_text_c":false,"use_bg_c":false,"text_c":"transparent","bg_c":"transparent","frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                 style="z-index: 6; white-space: nowrap; letter-spacing: 0;">{{$slider->title}}
+                            </div>
+
+                            <div class="tp-caption ch_content   tp-resizeme" id="slide-2-layer-3"
+                                 data-x="['left','left','left','left']" data-hoffset="['40','40','40','40']"
+                                 data-y="['top','top','top','top']" data-voffset="['505','415','480','355']"
+                                 data-fontsize="['24','24','24','18']" data-width="none" data-height="none"
+                                 data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                 data-frames='[{"delay":600,"speed":700,"text_c":"transparent","bg_c":"transparent","use_text_c":false,"use_bg_c":false,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":700,"use_text_c":false,"use_bg_c":false,"text_c":"transparent","bg_c":"transparent","frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                 style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
+                            </div>
+                        </li>
+                    @endif
                 @endforeach
             </ul>
         </div>
