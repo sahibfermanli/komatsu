@@ -1,13 +1,11 @@
 <?php
 
 return [
-    'address' => 'Address',
-    'phone' => 'Number',
-    'opening_hours' => 'Opening Hours',
-    'monday_friday' => 'MON – FRI',
-    'about_title' => 'About KOMATSU',
-    'about_desc' => 'KOMATSU Services is a global supplier of transport and logistics solutions. We have
-                                offices in more than 20 countries and an international network of partners and
-                                agents.',
-    'useful_links' => 'Useful Links',
+    'address' => 'Адрес',
+    'phone' => 'Номер',
+    'opening_hours' => 'Часы работы',
+    'monday_friday' => 'ПН – ПТ',
+    'about_title' => 'О Komatsu',
+    'about_desc' => 'KOMATSU Services — глобальный поставщик транспортных и логистических решений. У нас есть офисы в более чем 20 странах и международная сеть партнеров и агентов.',
+    'useful_links' => 'Полезные ссылки',
 ];

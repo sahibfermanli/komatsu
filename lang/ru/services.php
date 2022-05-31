@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'safety_transportation' => 'Safety Transportation',
+    'safety_transportation' => 'Безопасный Транспорт',
     'safety1' => 'Full Container Load',
     'safety1_small' => 'Cargo Hub Ocean Direct',
     'safety1_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it

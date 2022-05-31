@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'our_products' => 'Our Products',
-    'see_all_categories' => 'See All Categories',
-    'our_brochures' => 'Our brochures',
+    'our_products' => 'Наши продукты',
+    'see_all_categories' => 'Посмотреть все категории',
+    'our_brochures' => 'Наши брошюры',
     'title' => 'Складская техника',
-    'title2' => 'This page provides an overview of the advantages of  <span class="main-color">our warehouse technology</span>',
-    'description' => 'Effective planning is essential for every warehouse.',
-    'description2' => 'With the right equipment, warehouses and distribution centers can handle any logistical challenge',
+    'title2' => 'На этой странице представлен обзор преимуществ<span class="main-color">  нашей складской техники.</span>',
+    'description' => 'Эффективное планирование необходимо для каждого склада.',
+    'description2' => 'Имея подходящее оборудование, склады и распределительные центры могут справиться с любой логистической задачей.',
     'fast_worldwide_delivery' => 'Fast worldwide delivery',
     'fast_worldwide_delivery_desc' => 'There are many variations of passages of available, but the majority have suffered alteration in some form, by or randomised slightly believable.',
     'safe_and_secure_services' => 'Safe and Secure Services',

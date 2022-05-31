@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'description' => 'Description',
+    'description' => 'Описание',
     'model' => 'Модель',
     'capacity' => 'Грузоподьемность',
     'front' => 'Передние / задние шины',

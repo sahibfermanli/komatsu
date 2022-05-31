@@ -1,22 +1,22 @@
 <?php
 
 return [
-    'title' => 'Contact Details',
-    'description' => 'If you have any questions about what we offer for consumers or for business, you can always email us or call us via the below details. We’ll reply within 24 hours.',
-    'visit_our_office' => 'Visit our office',
-    'mail' => 'Mail Us at',
-    'phone' => 'Call us on',
-    'social' => 'We are social',
-    'working_hours' => 'WORKING HOURS',
-    'working_hours_desc' => 'We look forward to seeing you',
-    'monday' => 'Monday',
-    'tuesday' => 'Tuesday',
-    'wednesday' => 'Wednesday',
-    'thursday' => 'Thursday',
-    'friday' => 'Friday',
-    'saturday' => 'Saturday',
-    'sunday' => 'Sunday',
-    'closed' => 'Closed',
+    'title' => 'Контактная информация',
+    'description' => 'Если у вас есть какие-либо вопросы о том, что мы предлагаем для потребителей или для бизнеса, вы всегда можете написать нам по электронной почте или позвонить нам по указанным ниже реквизитам. Мы ответим в течение 24 часов.',
+    'visit_our_office' => 'Посетите наш офис',
+    'mail' => 'Напишите нам по адресу',
+    'phone' => 'Позвоните нам',
+    'social' => 'Мы общительны',
+    'working_hours' => 'РАБОЧЕЕ ВРЕМЯ',
+    'working_hours_desc' => 'Мы с нетерпением ждем встречи с вами',
+    'monday' => 'Понедельник',
+    'tuesday' => 'Вторник',
+    'wednesday' => 'Среда',
+    'thursday' => 'Четверг',
+    'friday' => 'Пятница',
+    'saturday' => 'Суббота',
+    'sunday' => 'Воскресенье',
+    'closed' => 'Закрыто',
 
 
 ];

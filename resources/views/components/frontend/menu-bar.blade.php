@@ -17,9 +17,9 @@
             </li>
             <li><a href="{{route('services')}}">@lang('menu.services')</a></li>
             <li><a href="{{route('contact.index')}}">@lang('menu.contact')</a></li>
-{{--            <li class="extra-menu-item menu-item-button-link">--}}
-{{--                <a href="" class="fh-btn btn">Send Email</a>--}}
-{{--            </li>--}}
+            <li class="extra-menu-item menu-item-button-link">
+                <a href="{{route('contact.index')}}" class="fh-btn btn">Send Email</a>
+            </li>
         </ul>
     </nav>
 </div>

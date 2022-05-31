@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Contact Details',
-    'description' => 'If you have any questions about what we offer for consumers or for business, you can always email us or call us via the below details. We’ll reply within 24 hours.',
+    'description' => 'Məhsullarımız və ya xidmətlərimiz,eyni zamanda nə təklif etdiyimizlə bağlı hər hansı sualınız varsa, bizə e-poçt göndərə və ya aşağıdakı təfərrüatlar vasitəsilə bizə zəng edə bilərsiniz. 24 saat ərzində cavab verəcəyik.',
     'visit_our_office' => 'Visit our office',
     'mail' => 'Mail Us at',
     'phone' => 'Call us on',

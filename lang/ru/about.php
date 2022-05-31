@@ -2,7 +2,9 @@
 
 return [
     'title' => 'Who We are',
-    'description' => '<p>«AzEquip» Company — imports and service of forklifts & the equipment of storage.</p>
-                        <p>Since 2006 the "AzEquip" Company is officiall dealer of KOMATSU Forklift Co Ltd. Since 2011
-                            is officiall dealer of KOMATSU CIS in Azerbaijan Republic.</p>'
+    'description' => '<p>«AzEquip» ООО — занимается импортом и сервисом вилочных погрузчиков и складского оборудования.</p>
+            <p>С 2006 года «AzEquip» ООО является официальным дилером вилочных
+                погрузчиков KOMATSU Forklift Co., Ltd. С 2011 года является
+                официальным дилером  Komatsu CİS в Азербайджанской Республике.</p>
+        '
 ];

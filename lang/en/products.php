@@ -2,12 +2,12 @@
 
 return [
     'description' => 'Description',
-    'model' => 'Модель',
-    'capacity' => 'Грузоподьемность',
-    'front' => 'Передние / задние шины',
-    'travel_speed' => 'Скорость движения с / без груза',
-    'lifting_speed' => 'Скорость подъема с / без груза',
-    'outside_turning_radius' => 'Внешний радиус поворота',
-    'operating_weight' => 'Эксплуатационный вес',
-    'engine_power' => 'Мощность двигателя',
+    'model' => 'Model',
+    'capacity' => 'Capacity',
+    'front' => 'Front / rear tyres',
+    'travel_speed' => 'Travel speed with/ without load',
+    'lifting_speed' => 'Lifting speed with / without load',
+    'outside_turning_radius' => 'Outside turning radius',
+    'operating_weight' => 'Operating weight',
+    'engine_power' => 'Engine power',
 ];

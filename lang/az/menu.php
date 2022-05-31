@@ -2,12 +2,12 @@
 
 return [
     'komatsu' => 'KOMATSU',
-    'categories' => 'Categories',
-    'all_categories' => 'All categories',
-    'sub_categories' => 'Sub categories',
-    'home' => 'Home',
-    'about' => 'About us',
-    'contact' => 'Contact',
-    'services' => 'Services',
-    'products' => 'Products',
+    'categories' => 'Kateqoriya',
+    'all_categories' => 'Bütün kateqoriyalar',
+    'sub_categories' => 'Alt kateqoriyalar',
+    'home' => 'Ana səhifə',
+    'about' => 'Haqqımızda',
+    'contact' => 'Əlaqə',
+    'services' => 'Xidmətlər',
+    'products' => 'MƏHSULLAR',
 ];

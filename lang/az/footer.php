@@ -1,13 +1,11 @@
 <?php
 
 return [
-    'address' => 'Address',
-    'phone' => 'Number',
-    'opening_hours' => 'Opening Hours',
-    'monday_friday' => 'MON – FRI',
-    'about_title' => 'About KOMATSU',
-    'about_desc' => 'KOMATSU Services is a global supplier of transport and logistics solutions. We have
-                                offices in more than 20 countries and an international network of partners and
-                                agents.',
-    'useful_links' => 'Useful Links',
+    'address' => 'Ünvan',
+    'phone' => 'Nömrə',
+    'opening_hours' => 'Açılış saatları',
+    'monday_friday' => 'BAZ - CÜM',
+    'about_title' => ' KOMATSU HAQQINDA',
+    'about_desc' => 'KOMATSU SERVİSİ nəqliyyat və logistika həlləri üzrə qlobal təchizatçıdır. Bizim 20-dən çox ölkədə ofislərimiz və beynəlxalq tərəfdaşlar və agentlər şəbəkəmiz var.',
+    'useful_links' => 'Faydalı Linklər',
 ];

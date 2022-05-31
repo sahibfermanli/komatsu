@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'title' => 'Leave Your Message',
-    'description' => 'If you have any questions about the services we provide simply use the form
-                below. We try and respond to all
-                <br>queries and comments within 24 hours.',
-    'full_name' => 'Your Full Name',
-    'email' => 'Email Address',
-    'phone' => 'Phone',
-    'message' => 'Your Message',
-    'submit' => 'Submit',
+    'title' => 'Оставьте свое сообщение',
+    'description' => 'Если у вас есть какие-либо вопросы об услугах, которые мы предоставляем, просто используйте форму
+                 ниже. Мы стараемся и отвечаем на все
+                 <br>запросы и комментарии в течение 24 часов.',
+    'full_name' => 'Ваше полное имя',
+    'email' => 'Адрес электронной почты',
+    'phone' => 'Телефон',
+    'message' => 'Ваше сообщение',
+    'submit' => 'Oтправить',
 ];

@@ -16,7 +16,7 @@ return [
     'customer_support_desc' => 'There are many variations of passages of available, but the majority have suffered alteration in some form, by or randomised slightly believable.',
     'the_complete_solution' => 'The Complete Solution',
     'the_complete_solution_desc' => '<p>Our warehousing services are known nationwide to be one of the most reliable, safe and affordable, because we take pride in delivering the best of warehousing services, at the most reasonable prices.</p>
-                        <p>Pleasure and praising pain was born and I will give you a complete account of system, and expound actual teachings occasionally circumstances.</p>',
+                        ',
     'three_step_processing' => 'Three Step processing',
     'receive_from_shipper' => 'Receive From Shipper',
     'receive_from_shipper_desc' => 'Pursues or desires to obtain sed pain of it because it is pain circumstances.',
