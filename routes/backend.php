@@ -11,7 +11,7 @@ use App\Http\Controllers\Backend\SocialController;
 use App\Http\Controllers\Backend\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['prefix' => 'backend', 'as' => 'backend.', 'middleware' => ['auth']], static function () {
+Route::group(['prefix' => 'admin123', 'as' => 'backend.', 'middleware' => ['auth']], static function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     Route::group(['prefix' => 'users', 'as' => 'users.'], static function () {
