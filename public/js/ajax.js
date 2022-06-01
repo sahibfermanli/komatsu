@@ -109,7 +109,6 @@ function deleteDataAxios(url) {
         }
     })
         .then(function (resp) {
-            console.log(resp)
             swal.close()
             if (resp.status === 200) {
                 form_submit_message(resp.data.message)
@@ -122,7 +121,6 @@ function deleteDataAxios(url) {
             }
         })
         .catch(function (resp) {
-            console.log(resp)
             swal.close()
             let response = resp.response
             if (response.status === 422) {
