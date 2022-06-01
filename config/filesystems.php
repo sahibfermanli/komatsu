@@ -60,7 +60,7 @@ return [
             'driver' => 'local',
             'root'   => public_path('media'),
             'url'    => env('APP_URL').'/media',
-            'permission' => 0777,
+            'permission' => 777,
         ],
     ],
 
