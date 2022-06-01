@@ -8,5 +8,5 @@ return [
     'about_title' => ' KOMATSU HAQQINDA',
     'about_desc' => 'KOMATSU SERVİSİ nəqliyyat və logistika həlləri üzrə qlobal təchizatçıdır. Bizim 20-dən çox ölkədə ofislərimiz və beynəlxalq tərəfdaşlar və agentlər şəbəkəmiz var.',
     'useful_links' => 'Faydalı Linklər',
-    'map' => 'Xerite',
+    'map' => 'Bizi xəritədə tapın',
 ];

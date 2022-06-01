@@ -10,5 +10,5 @@ return [
     'contact' => 'Əlaqə',
     'services' => 'Xidmətlər',
     'products' => 'MƏHSULLAR',
-    'send_email' => 'Send email',
+    'send_email' => 'E-poçt göndər',
 ];
