@@ -10,4 +10,5 @@ return [
                                 offices in more than 20 countries and an international network of partners and
                                 agents.',
     'useful_links' => 'Useful Links',
+    'map' => 'Xerite',
 ];

@@ -6,7 +6,7 @@
             @foreach($categories as $category)
                 @if(count($category->sub_categories) > 0)
                     <li class="menu-item @if(Request::route('category') === $category->slug) current-menu-item @endif">
-                        <a class="dropdown-toggle">{{$category->name}}</a>
+                        <a class="dropdown-toggle">{{$category->name}}</a><i class="fa fa-angle-down" aria-hidden="true" style="float: right; position: relative; top: -21px;"></i>
                     </li>
                     <ul class="sub-menu " style="display: none">
                         @foreach($category->sub_categories as $sub_categories_for_menu)

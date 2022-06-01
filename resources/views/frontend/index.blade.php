@@ -68,7 +68,7 @@
                                  style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
 
                             </div>
-                            <a class="tp-caption ch_button rev-btn " href="#" target="_blank" id="slide-2-layer-5"
+                            <a class="tp-caption ch_button rev-btn " href="{{route('contact.index')}}" target="_blank" id="slide-2-layer-5"
                                data-x="['left','left','left','left']" data-hoffset="['40','40','40','40']"
                                data-y="['top','top','top','top']" data-voffset="['615','520','590','450']"
                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
@@ -77,8 +77,7 @@
                                data-textAlign="['inherit','inherit','inherit','inherit']"
                                data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]"
                                data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
-                               style="z-index: 10; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">About
-                                us </a>
+                               style="z-index: 10; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">@lang('menu.about')</a>
                         </li>
                     @else
                         @php($odd = true)
@@ -135,7 +134,7 @@
                                  data-paddingleft="[0,0,0,0]"
                                  style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
                             </div>
-                            <a class="tp-caption ch_button rev-btn " href="#" target="_blank" id="slide-3-layer-5"
+                            <a class="tp-caption ch_button rev-btn " href="{{route('contact.index')}}" target="_blank" id="slide-3-layer-5"
                                data-x="['left','left','left','left']" data-hoffset="['540','40','40','40']"
                                data-y="['top','top','top','top']" data-voffset="['610','520','520','400']"
                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
@@ -144,8 +143,7 @@
                                data-textAlign="['inherit','inherit','inherit','inherit']"
                                data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]"
                                data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
-                               style="z-index: 10; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">About
-                                us </a>
+                               style="z-index: 10; white-space: nowrap; letter-spacing: px;background-color:rgba(0, 0, 0, 0);border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">@lang('menu.about')</a>
                         </li>
                     @endif
                 @endforeach
