@@ -10,4 +10,5 @@ return [
     'contact' => 'Контакт',
     'services' => 'Услуги',
     'products' => 'Продукты',
+    'send_email' => 'Send email',
 ];
