@@ -7013,3 +7013,6 @@ ul.service-menu .children li:last-child {
     position: relative;
     bottom: 10px;
 }
+div#slide-2-layer-1 {
+    white-space: break-spaces!important;
+}
