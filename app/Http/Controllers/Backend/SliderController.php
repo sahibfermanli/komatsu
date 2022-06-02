@@ -80,7 +80,7 @@ class SliderController extends Controller
     {
         $slider = Slider::query()->create($request->validated());
 
-        $slider->addMediaFromRequest('image')->toMediaCollection('sliders')->setCustomProperty('permission', 777);
+        $slider->addMediaFromRequest('image')->toMediaCollection('sliders');
 
         return response()->json(GeneralResource::make([
             'message' => 'New item added successfully!',
@@ -101,7 +101,7 @@ class SliderController extends Controller
         if($request->hasFile('image') && $request->file('image')?->isValid()) {
             try {
                 $slider->clearMediaCollection();
-                $slider->addMediaFromRequest('image')->toMediaCollection('sliders')->setCustomProperty('permission', 777);
+                $slider->addMediaFromRequest('image')->toMediaCollection('sliders');
             } catch (FileDoesNotExist|FileIsTooBig) {
                 return response()->json(GeneralResource::make([
                     'message' => 'Selected item updated successfully but image cannot be updated!',

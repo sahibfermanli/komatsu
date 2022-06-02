@@ -54,7 +54,7 @@ class SettingController extends Controller
         if($request->hasFile('logo') && $request->file('logo')?->isValid()) {
             try {
                 $settings->clearMediaCollection();
-                $settings->addMediaFromRequest('logo')->toMediaCollection('settings')->setCustomProperty('permission', '777');
+                $settings->addMediaFromRequest('logo')->toMediaCollection('settings');
             } catch (FileDoesNotExist|FileIsTooBig) {
                 return response()->json(GeneralResource::make([
                     'message' => 'Selected item updated successfully but image cannot be updated!',
