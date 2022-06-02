@@ -26,7 +26,7 @@ class SocialStoreRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'max:100'],
             'icon' => ['required', 'string', 'max:50'],
-            'url' => ['required', 'url', 'max:255'],
+            'url' => ['nullable', 'url', 'max:255'],
         ];
     }
 }
