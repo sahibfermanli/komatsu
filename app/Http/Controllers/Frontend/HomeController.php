@@ -11,6 +11,7 @@ class HomeController extends BaseController
     {
         $sliders = Slider::query()
             ->with(['media'])
+            ->where('is_active', true)
             ->get();
 
         return view('frontend.index', compact('sliders'));
