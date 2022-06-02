@@ -66,6 +66,19 @@ let KTDatatableRemoteAjax = function () {
 							</div>';
                     },
                 },
+                {
+                    field: 'logo_footer',
+                    title: 'Logo (footer)',
+                    template: function (row) {
+                        let logo_footer = 'background-image:url(\'' + row.logo_footer + '\')';
+
+                        return '<div class="d-flex align-items-center">\
+								<div class="symbol symbol-40 flex-shrink-0">\
+									<div class="symbol-label" style="' + logo_footer + '"></div>\
+								</div>\
+							</div>';
+                    },
+                },
                 {field: 'phone', title: 'Phone'},
                 {field: 'email', title: 'E-mail'},
                 {field: 'address', title: 'Address'},
@@ -83,7 +96,7 @@ let KTDatatableRemoteAjax = function () {
                     autoHide: false,
                     template: function (row) {
                         return '\
-                        <button onclick=\'show_edit_modal("' + row.logo + '", "' + row.title + '", "' + row.phone + '", "' + row.email + '", "' + row.address + '", "' + row.meta_keywords + '","' + row.meta_description + '", "' + row.google_site_verification + '")\' class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">\
+                        <button onclick=\'show_edit_modal("' + row.logo + '", "' + row.logo_footer + '", "' + row.title + '", "' + row.phone + '", "' + row.email + '", "' + row.address + '", "' + row.meta_keywords + '","' + row.meta_description + '", "' + row.google_site_verification + '")\' class="btn btn-sm btn-clean btn-icon mr-2" title="Edit details">\
                             <span class="svg-icon svg-icon-md">\
                                 <svg width="24px" height="24px" viewBox="0 0 24 24">\
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
@@ -119,6 +132,7 @@ function send_data(e) {
 
     formData.append('_token', csrf_token)
     formData.append('logo', document.getElementById("logo").files[0] ?? null)
+    formData.append('logo_footer', document.getElementById("logo_footer").files[0] ?? null)
     formData.append('title', document.getElementById("title").value)
     formData.append('phone', document.getElementById("phone").value)
     formData.append('email', document.getElementById("email").value)
@@ -130,12 +144,15 @@ function send_data(e) {
     postData(url, formData)
 }
 
-function show_edit_modal(logo, title, phone, email, address, meta_keywords, meta_description, google_site_verification) {
+function show_edit_modal(logo, logo_footer, title, phone, email, address, meta_keywords, meta_description, google_site_verification) {
     $('.modal-title').html('Edit')
 
     $('#logo_div').css('background-image', "url('" + logo + "')")
     $('#logo').val('')
     $('#logo_remove').val('')
+    $('#logo_footer_div').css('background-image', "url('" + logo_footer + "')")
+    $('#logo_footer').val('')
+    $('#logo_footer_remove').val('')
     $('#title').val(title)
     $('#phone').val(phone)
     $('#email').val(email)

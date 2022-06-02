@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="contact col-md-3 col-xs-12 col-sm-12">
-                    <a href="#" class="footer-logo"><img src="{{$settings->logo}}" alt="{{$settings->title}}"></a>
+                    <a href="{{route('home')}}" class="footer-logo"><img src="{{$settings->logo_footer}}" alt="{{$settings->title}}"></a>
                 </div>
                 <div class="contact col-md-3 col-xs-12 col-sm-12"><i class="flaticon-signs"></i>
                     <p>@lang('footer.address') :</p>

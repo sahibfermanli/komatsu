@@ -7,7 +7,7 @@
         <!--begin::Entry-->
         <div class="d-flex flex-column-fluid">
             <!--begin::Container-->
-            <div class="container">
+            <div class="container-fluid">
                 <!--begin::Card-->
                 <div class="card card-custom">
                     <div class="card-body">
@@ -55,6 +55,24 @@
                                     <i class="fa fa-pen icon-sm text-muted"></i>
                                     <input type="file" id="logo" name="logo" accept=".png, .jpg, .jpeg" onchange="image_preview(this, 'logo_div')"/>
                                     <input type="hidden" id="logo_remove" name="logo_remove"/>
+                                </label>
+                                <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                      data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
+                                    <i class="ki ki-bold-close icon-xs text-muted"></i>
+                                </span>
+                            </div>
+                            <div class="image-input" id="kt_image_2" style="margin-left: 50px;">
+                                <div class="image-input-wrapper" id="logo_footer_div"
+                                     data-default-image="{{asset('backend/assets/media/users/blank.png')}}"
+                                     style="background-image: url({{asset('backend/assets/media/users/blank.png')}})">
+                                </div>
+                                <label
+                                    class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                    data-action="change" data-toggle="tooltip" title=""
+                                    data-original-title="Change image">
+                                    <i class="fa fa-pen icon-sm text-muted"></i>
+                                    <input type="file" id="logo_footer" name="logo" accept=".png, .jpg, .jpeg" onchange="image_preview(this, 'logo_footer_div')"/>
+                                    <input type="hidden" id="logo_footer_remove" name="logo_footer_remove"/>
                                 </label>
                                 <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
                                       data-action="cancel" data-toggle="tooltip" title="Cancel avatar">

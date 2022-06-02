@@ -27,6 +27,7 @@ class SettingUpdateRequest extends FormRequest
         return [
             'title' => ['required', 'string', 'max:100'],
             'logo' => ['nullable', new ImageRule()],
+            'logo_footer' => ['nullable', new ImageRule()],
             'phone' => ['nullable', 'string', 'max:30'],
             'email' => ['nullable', 'email', 'max:100'],
             'address' => ['nullable', 'string', 'max:500'],

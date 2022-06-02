@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Casts\Settings\LogoCast;
+use App\Casts\Settings\LogoFooterCast;
 use App\Traits\ActionBy;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,7 +17,8 @@ class Setting extends Model implements HasMedia
     use HasFactory, SoftDeletes, ActionBy, InteractsWithMedia;
 
     protected $casts = [
-        'logo' => LogoCast::class
+        'logo' => LogoCast::class,
+        'logo_footer' => LogoFooterCast::class,
     ];
 
     protected $fillable = [
@@ -37,5 +39,6 @@ class Setting extends Model implements HasMedia
     public function registerMediaCollections(): void
     {
         $this->addMediaCollection('settings')->singleFile();
+        $this->addMediaCollection('settings_logo_footer')->singleFile();
     }
 }

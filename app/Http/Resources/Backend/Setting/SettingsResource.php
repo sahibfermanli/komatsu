@@ -17,6 +17,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  * @property mixed $google_site_verification
  * @property mixed $updated_at
  * @property mixed $updated_user
+ * @property mixed $logo_footer
  */
 class SettingsResource extends JsonResource
 {
@@ -35,6 +36,7 @@ class SettingsResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'logo' => $this->logo,
+            'logo_footer' => $this->logo_footer,
             'phone' => $this->phone,
             'email' => $this->email,
             'address' => $this->address,

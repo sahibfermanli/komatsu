@@ -33,7 +33,7 @@ class SettingController extends Controller
     {
         $response = Setting::query()
             ->where('id', 1)
-            ->with(['updated_user'])
+            ->with(['updated_user', 'media'])
             ->first();
 
         return new SettingsResource($response);
@@ -55,6 +55,17 @@ class SettingController extends Controller
             try {
                 $settings->clearMediaCollection();
                 $settings->addMediaFromRequest('logo')->toMediaCollection('settings');
+            } catch (FileDoesNotExist|FileIsTooBig) {
+                return response()->json(GeneralResource::make([
+                    'message' => 'Selected item updated successfully but image cannot be updated!',
+                ]));
+            }
+        }
+
+        if($request->hasFile('logo_footer') && $request->file('logo_footer')?->isValid()) {
+            try {
+                $settings->clearMediaCollection();
+                $settings->addMediaFromRequest('logo_footer')->toMediaCollection('settings_logo_footer');
             } catch (FileDoesNotExist|FileIsTooBig) {
                 return response()->json(GeneralResource::make([
                     'message' => 'Selected item updated successfully but image cannot be updated!',
