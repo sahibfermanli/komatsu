@@ -295,13 +295,13 @@
                             <p>@lang('home.why_choosing_us3_desc')</p>
                         </div>
                     </div>
-                    <div class="fh-icon-box  style-2 icon-left">
-                        <span class="fh-icon"><i class="flaticon-open-cardboard-box"></i></span>
-                        <h4 class="box-title"><span>@lang('home.why_choosing_us4')</span></h4>
-                        <div class="desc">
-                            <p>@lang('home.why_choosing_us4_desc')</p>
-                        </div>
-                    </div>
+{{--                    <div class="fh-icon-box  style-2 icon-left">--}}
+{{--                        <span class="fh-icon"><i class="flaticon-open-cardboard-box"></i></span>--}}
+{{--                        <h4 class="box-title"><span>@lang('home.why_choosing_us4')</span></h4>--}}
+{{--                        <div class="desc">--}}
+{{--                            <p>@lang('home.why_choosing_us4_desc')</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

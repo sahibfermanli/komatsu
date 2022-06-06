@@ -23,7 +23,7 @@ return [
     'special_service4_desc' => 'Package and store your things effectively and securely to make sure them in storage.',
     'special_service5' => '1 year factory warranty',
     'special_service5_desc' => 'Package and store your things effectively and securely to make sure them in storage.',
-    'special_service6' => 'Packaging And Storage',
+    'special_service6' => 'Design and construction of warehouses',
     'special_service6_desc' => 'Package and store your things effectively and securely to make sure them in storage.',
     'why_choosing_us' => 'Why Choosing us?',
     'why_choosing_us1' => 'Reliable product',
@@ -32,8 +32,7 @@ return [
     'why_choosing_us2_desc' => 'Specialises in international freight forwarding of merchandise and associated logistic
                                 services',
     'why_choosing_us3' => 'Satisfied customer',
-    'why_choosing_us3_desc' => 'We Offers intellgent concepts for road and tail and well as complex special transport
-                                services',
+    'why_choosing_us3_desc' => 'We have over 300 satisfied customers.',
     'why_choosing_us4' => 'Careful Handling of Valuable Goods',
     'why_choosing_us4_desc' => 'Komatsu are transported at some stage of their journey along the world’s roads',
     'our_partners' => 'Our partners',

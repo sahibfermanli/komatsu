@@ -77,10 +77,10 @@
                         <h3>@lang('contact.working_hours')</h3>
                         <p>@lang('contact.working_hours_desc')</p>
                         <ul>
-                            <li>@lang('contact.monday') <span class="hour">9:00 am – 17.00 pm</span></li>
+                            <li>@lang('contact.monday') <span class="hour">9:00 am – 18.00 pm</span></li>
                             <li>@lang('contact.tuesday')<span class="hour">9:00 am – 18.00 pm</span></li>
                             <li>@lang('contact.wednesday') <span class="hour">9:00 am – 18.00 pm</span></li>
-                            <li>@lang('contact.thursday') &amp; @lang('contact.friday')<span class="hour">10:00 am – 16.00 pm</span></li>
+                            <li>@lang('contact.thursday') &amp; @lang('contact.friday')<span class="hour">09:00 am – 18.00 pm</span></li>
                             <li>@lang('contact.saturday') &amp; @lang('contact.sunday') <span class="hour main-color">@lang('contact.closed')</span></li>
                         </ul>
                     </div>

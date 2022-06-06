@@ -5261,7 +5261,7 @@ ul.service-menu .children li:last-child {
   margin-bottom: 0;
   margin-top: 0;
   position: relative;
-  text-transform: uppercase;
+
 }
 .fh-section-title h2:before {
   content: '';
@@ -5575,6 +5575,7 @@ ul.service-menu .children li:last-child {
 }
 .fh-service-box.style-1 {
   padding: 25px 20px;
+    height:243px;
   border: 1px solid #232951;
 }
 .fh-service-box.style-1 .fh-icon,
