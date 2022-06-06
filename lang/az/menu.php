@@ -10,6 +10,6 @@ return [
     'contact' => 'Əlaqə',
     'services' => 'Xidmətlər',
     'products' => 'MƏHSULLAR',
-    'brochures' => 'Brochures',
+    'brochures' => 'Broşuralar',
     'send_email' => 'E-poçt göndər',
 ];

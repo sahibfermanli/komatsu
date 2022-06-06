@@ -1,24 +1,22 @@
 <?php
 
 return [
-    'safety_transportation' => 'Safety Transportation',
-    'safety1' => 'Full Container Load',
-    'safety1_small' => 'Cargo Hub Ocean Direct',
-    'safety1_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it
-                                            is pain, but occasionally circumstances.</p>
+    'safety_transportation' => 'Service',
+    'safety1' => 'Other service support',
+    'safety1_small' => '',
+    'safety1_desc' => '<p>AzEquip supports its customers in solving the following services in areas close to its activities.</p>
                                         <ul>
-                                            <li>Consignee direct delivery</li>
-                                            <li>Suitable for all kinds of commodities</li>
-                                            <li>Tailored alternatives available</li>
+                                            <li>Warehouse Design</li>
+                                            <li>Construction of warehouses</li>
+                                            <li>Construction of hangars</li>
                                         </ul>',
-    'safety2' => 'Less than Container',
-    'safety2_small' => 'Cargo Hub Ocean Direct',
-    'safety2_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it
-                                            is pain, but occasionally circumstances.</p>
+    'safety2' => 'Warehouse equipment',
+    'safety2_small' => '',
+    'safety2_desc' => '<p>In addition to the products provided by AzEquip, it provides other equipment needed for the warehouse.</p>
                                         <ul>
-                                            <li>Consignee direct delivery</li>
-                                            <li>Suitable for all kinds of commodities</li>
-                                            <li>Tailored alternatives available</li>
+                                            <li>Transpalet</li>
+                                            <li>Mechanical and semi-electric stacker</li>
+                                            <li>Scales and electric transparencies</li>
                                         </ul>',
-    'benefits_of_service' => 'Benefits of Service',
+    'benefits_of_service' => 'BENEFITS OF  SERVICE',
 ];

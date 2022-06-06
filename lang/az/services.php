@@ -1,24 +1,22 @@
 <?php
 
 return [
-    'safety_transportation' => 'Safety Transportation',
-    'safety1' => 'Full Container Load',
-    'safety1_small' => 'Cargo Hub Ocean Direct',
-    'safety1_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it
-                                            is pain, but occasionally circumstances.</p>
+    'safety_transportation' => 'Servis xidməti',
+    'safety1' => 'Digər xidmət dəstəyi',
+    'safety1_small' => '',
+    'safety1_desc' => '<p>AzEquip oz fəaliyyətinə yaxın olan sahələrdə  müştərilərinə aşağıdakı xidmətlərin həllindı öz dəstiyini gəstərir.</p>
                                         <ul>
-                                            <li>Consignee direct delivery</li>
-                                            <li>Suitable for all kinds of commodities</li>
-                                            <li>Tailored alternatives available</li>
+                                            <li>Anbarların Layihələndirilməsi</li>
+                                            <li>Anbarların qurulması</li>
+                                            <li>Anqarların qurulması</li>
                                         </ul>',
-    'safety2' => 'Less than Container',
-    'safety2_small' => 'Cargo Hub Ocean Direct',
-    'safety2_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it
-                                            is pain, but occasionally circumstances.</p>
+    'safety2' => 'Anbar avadanlıqları',
+    'safety2_small' => '',
+    'safety2_desc' => '<p>AzEquip  təqdim etdiyi məhsullardan basqa anbar üçün lazım olan digər avadanlıqların təmini ilə məşquldur.</p>
                                         <ul>
-                                            <li>Consignee direct delivery</li>
-                                            <li>Suitable for all kinds of commodities</li>
-                                            <li>Tailored alternatives available</li>
+                                            <li>Transpalet</li>
+                                            <li>Mexaniki və yarım elektrikli istifləyici</li>
+                                            <li>Tərəzili və elektrikli transpalet</li>
                                         </ul>',
-    'benefits_of_service' => 'Benefits of Service',
+    'benefits_of_service' => 'XİDMƏTİN FAYDALARI',
 ];

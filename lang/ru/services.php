@@ -1,24 +1,22 @@
 <?php
 
 return [
-    'safety_transportation' => 'Безопасный Транспорт',
-    'safety1' => 'Full Container Load',
-    'safety1_small' => 'Cargo Hub Ocean Direct',
-    'safety1_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it
-                                            is pain, but occasionally circumstances.</p>
+    'safety_transportation' => 'Услуги',
+    'safety1' => 'Другая сервисная поддержки',
+    'safety1_small' => '',
+    'safety1_desc' => '<p>AzEquip поддерживает своих клиентов в решении следующих услуг в областях, близких к его деятельности.</p>
                                         <ul>
-                                            <li>Consignee direct delivery</li>
-                                            <li>Suitable for all kinds of commodities</li>
-                                            <li>Tailored alternatives available</li>
+                                            <li>Дизайн склада</li>
+                                            <li>Строительство складов</li>
+                                            <li>Строительство ангаров</li>
                                         </ul>',
-    'safety2' => 'Less than Container',
-    'safety2_small' => 'Cargo Hub Ocean Direct',
-    'safety2_desc' => '<p>There anyone who loves or pursue desire to obtain pains of itself, because it
-                                            is pain, but occasionally circumstances.</p>
+    'safety2' => 'Складское оборудование',
+    'safety2_small' => '',
+    'safety2_desc' => '<p>В дополнение к продукции, предоставляемой AzEquip, она предоставляет другое оборудование, необходимое для склада.</p>
                                         <ul>
-                                            <li>Consignee direct delivery</li>
-                                            <li>Suitable for all kinds of commodities</li>
-                                            <li>Tailored alternatives available</li>
+                                            <li>Транспалет</li>
+                                            <li>Механический и полуэлектрический штабелер</li>
+                                            <li>Весы и электропрозрачные пленки</li>
                                         </ul>',
-    'benefits_of_service' => 'Benefits of Service',
+    'benefits_of_service' => 'ПРЕИМУЩЕСТВА УСЛУГИ',
 ];

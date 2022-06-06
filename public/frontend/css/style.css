@@ -7016,3 +7016,10 @@ ul.service-menu .children li:last-child {
 div#slide-2-layer-1 {
     white-space: break-spaces!important;
 }
+.fh-latest-post .item-latest-post .entry-thumbnail {
+    margin-bottom: 15px;
+    height: 199px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -1px 4px 6px 1px #80808029;
+}
