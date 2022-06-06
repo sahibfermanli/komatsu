@@ -305,39 +305,43 @@
         </div>
     </section>
 
-    {{--    <section class="partener-1 bluebg">--}}
-    {{--        <div class="container">--}}
-    {{--            <div class="fh-partner clearfix">--}}
-    {{--                <div class="list-item slide-partener">--}}
-    {{--                    <div class="partner-item">--}}
-    {{--                        <div class="partner-content">--}}
-    {{--                            <a href="#" target="_self"><img alt="1764" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
-    {{--                    <div class="partner-item">--}}
-    {{--                        <div class="partner-content">--}}
-    {{--                            <a href="#" target="_self"><img alt="1763" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
-    {{--                    <div class="partner-item">--}}
-    {{--                        <div class="partner-content">--}}
-    {{--                            <a href="#" target="_self"><img alt="1762" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
-    {{--                    <div class="partner-item">--}}
-    {{--                        <div class="partner-content">--}}
-    {{--                            <a href="#" target="_self"><img alt="1761" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
-    {{--                    <div class="partner-item">--}}
-    {{--                        <div class="partner-content">--}}
-    {{--                            <a href="#" target="_self"><img alt="1765" src="{{asset('frontend/image/partner-4.png')}}"></a>--}}
-    {{--                        </div>--}}
-    {{--                    </div>--}}
-    {{--                </div>--}}
-    {{--            </div>--}}
-    {{--        </div>--}}
-    {{--    </section>--}}
+    <section class="testmonial-1 secpadd">
+        <div class="container">
+            <div class="fh-section-title clearfix f30  text-left version-dark paddbtm40">
+                <h2>Our partners</h2>
+            </div>
+            <div class="fh-latest-post carousel">
+                <div class="post-list  news-slide">
+
+                    <div class="item-latest-post clearfix">
+                        <div class="entry-thumbnail">
+                            <a href="#"><img src="images/blogs/blog-2.jpg" alt="" /></a>
+
+                        </div>
+
+                    </div>
+                    <div class="item-latest-post clearfix">
+                        <div class="entry-thumbnail">
+                            <a href="#"><img src="images/blogs/blog-3.jpg" alt="" /></a>
+
+                        </div>
+
+                    </div>
+                    <div class="item-latest-post clearfix">
+                        <div class="entry-thumbnail">
+                            <a href="#"><img src="images/blogs/blog-4.jpg" alt="" /></a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 @endsection
 
 @section('css')
