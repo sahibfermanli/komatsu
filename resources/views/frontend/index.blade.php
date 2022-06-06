@@ -68,7 +68,8 @@
                                  style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
 
                             </div>
-                            <a class="tp-caption ch_button rev-btn " href="{{route('contact.index')}}" target="_blank" id="slide-2-layer-5"
+                            <a class="tp-caption ch_button rev-btn " href="{{route('contact.index')}}" target="_blank"
+                               id="slide-2-layer-5"
                                data-x="['left','left','left','left']" data-hoffset="['40','40','40','40']"
                                data-y="['top','top','top','top']" data-voffset="['615','520','590','450']"
                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
@@ -134,7 +135,8 @@
                                  data-paddingleft="[0,0,0,0]"
                                  style="z-index: 8; white-space: nowrap; letter-spacing: 0px;">{{$slider->description}}
                             </div>
-                            <a class="tp-caption ch_button rev-btn " href="{{route('contact.index')}}" target="_blank" id="slide-3-layer-5"
+                            <a class="tp-caption ch_button rev-btn " href="{{route('contact.index')}}" target="_blank"
+                               id="slide-3-layer-5"
                                data-x="['left','left','left','left']" data-hoffset="['540','40','40','40']"
                                data-y="['top','top','top','top']" data-voffset="['610','520','520','400']"
                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
@@ -308,39 +310,21 @@
     <section class="testmonial-1 secpadd">
         <div class="container">
             <div class="fh-section-title clearfix f30  text-left version-dark paddbtm40">
-                <h2>Our partners</h2>
+                <h2>@lang('home.our_partners')</h2>
             </div>
             <div class="fh-latest-post carousel">
                 <div class="post-list  news-slide">
-
-                    <div class="item-latest-post clearfix">
-                        <div class="entry-thumbnail">
-                            <a href="#"><img src="images/blogs/blog-2.jpg" alt="" /></a>
-
+                    @foreach($partners as $partner)
+                        <div class="item-latest-post clearfix">
+                            <div class="entry-thumbnail">
+                                <a href="{{$partner->url}}" target="_blank"><img src="{{$partner->image}}" alt="{{$partner->name}}"/></a>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="item-latest-post clearfix">
-                        <div class="entry-thumbnail">
-                            <a href="#"><img src="images/blogs/blog-3.jpg" alt="" /></a>
-
-                        </div>
-
-                    </div>
-                    <div class="item-latest-post clearfix">
-                        <div class="entry-thumbnail">
-                            <a href="#"><img src="images/blogs/blog-4.jpg" alt="" /></a>
-
-                        </div>
-
-                    </div>
-
-
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
-
 
 @endsection
 

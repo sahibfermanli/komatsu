@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\MessageController;
+use App\Http\Controllers\Backend\PartnerController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SettingController;
@@ -66,6 +67,14 @@ Route::group(['prefix' => 'admin123', 'as' => 'backend.', 'middleware' => ['auth
         Route::post('/store', [SliderController::class, 'store'])->name('store');
         Route::post('/update/{slider}', [SliderController::class, 'update'])->name('update');
         Route::delete('/delete/{slider}', [SliderController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => 'partners', 'as' => 'partners.'], static function () {
+        Route::get('/', [PartnerController::class, 'index'])->name('index');
+        Route::get('/list', [PartnerController::class, 'list'])->name('list');
+        Route::post('/store', [PartnerController::class, 'store'])->name('store');
+        Route::post('/update/{partner}', [PartnerController::class, 'update'])->name('update');
+        Route::delete('/delete/{partner}', [PartnerController::class, 'destroy'])->name('destroy');
     });
 
     Route::group(['prefix' => 'settings', 'as' => 'settings.'], static function () {

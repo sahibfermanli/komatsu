@@ -34,6 +34,6 @@ return [
     'why_choosing_us3_desc' => '300-dən artıq məmnun müştəri kütləmiz var',
     'why_choosing_us4' => 'Careful Handling of Valuable Goods',
     'why_choosing_us4_desc' => 'Komatsu are transported at some stage of their journey along the world’s roads',
-
+    'our_partners' => 'Our partners',
 
 ];
