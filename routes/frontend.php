@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\BrochureController;
 use App\Http\Controllers\Frontend\CategoryController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\HomeController;
@@ -27,6 +28,8 @@ Route::middleware(LanguageMiddleware::class)->group(function() {
             Route::get('/{category}/{product}', [ProductController::class, 'show'])->name('show');
         });
     });
+
+    Route::get('/brochures', [BrochureController::class, 'index'])->name('brochures');
 
     Route::post('contact/send-message', [ContactController::class, 'send_message'])->name('contact.send_message');
 });

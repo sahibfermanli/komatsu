@@ -16,6 +16,7 @@
             </ul>
         </li>
         <li><a href="{{route('services')}}">@lang('menu.services')</a></li>
+        <li><a href="{{route('brochures')}}">@lang('menu.brochures')</a></li>
         <li><a href="{{route('contact.index')}}">@lang('menu.contact')</a></li>
     </ul>
 </div>

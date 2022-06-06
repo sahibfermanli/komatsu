@@ -10,5 +10,6 @@ return [
     'contact' => 'Contact',
     'services' => 'Services',
     'products' => 'Products',
+    'brochures' => 'Brochures',
     'send_email' => 'Send email',
 ];

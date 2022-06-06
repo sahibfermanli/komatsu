@@ -27,12 +27,7 @@
         <div class="textwidget custom-html-widget">
             <div class="download">
                 <div class="item-download">
-                    <a href="#" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Service
-                        Brochure.Pdf</a>
-                </div>
-                <div class="item-download">
-                    <a href="#" target="_blank"><i class="fa fa-file-word-o" aria-hidden="true"></i>About
-                        Company.Doc</a>
+                    <a href="{{route("brochures")}}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>@lang('menu.brochures')</a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\BrochureController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\MessageController;
@@ -75,6 +76,14 @@ Route::group(['prefix' => 'admin123', 'as' => 'backend.', 'middleware' => ['auth
         Route::post('/store', [PartnerController::class, 'store'])->name('store');
         Route::post('/update/{partner}', [PartnerController::class, 'update'])->name('update');
         Route::delete('/delete/{partner}', [PartnerController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => 'brochures', 'as' => 'brochures.'], static function () {
+        Route::get('/', [BrochureController::class, 'index'])->name('index');
+        Route::get('/list', [BrochureController::class, 'list'])->name('list');
+        Route::post('/store', [BrochureController::class, 'store'])->name('store');
+        Route::post('/update/{brochure}', [BrochureController::class, 'update'])->name('update');
+        Route::delete('/delete/{brochure}', [BrochureController::class, 'destroy'])->name('destroy');
     });
 
     Route::group(['prefix' => 'settings', 'as' => 'settings.'], static function () {
