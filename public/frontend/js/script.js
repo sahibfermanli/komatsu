@@ -261,11 +261,10 @@
 	if ($('.news-slide').length) {
 		$('.news-slide').owlCarousel({
 			loop:true,
-			margin:0,
 			nav:false,
-            autoPlay: true,
-            autoplayTimeout:2000,
-			items:3,
+            autoplay:true,
+            autoplayTimeout:1000,
+			items:1,
 			dots:false,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{

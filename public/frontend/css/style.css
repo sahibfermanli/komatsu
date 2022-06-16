@@ -7019,8 +7019,9 @@ div#slide-2-layer-1 {
 }
 .fh-latest-post .item-latest-post .entry-thumbnail {
     margin-bottom: 15px;
-    height: 199px;
+    height: 167px;
+    margin-top: 2px;
     position: relative;
     overflow: hidden;
-    box-shadow: -1px 4px 6px 1px #80808029;
+    box-shadow: 1px 2px 6px 1px #80808029;
 }
