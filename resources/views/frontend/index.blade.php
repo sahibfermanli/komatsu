@@ -236,7 +236,7 @@
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><img src="{{asset('frontend/image/tires.png')}}" alt=""/></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/tire.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service4')</a>
                         </h4>

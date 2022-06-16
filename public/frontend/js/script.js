@@ -263,11 +263,9 @@
 			loop:true,
 			margin:0,
 			nav:false,
-            autoPlay: 500,
-            slideSpeed: 00,
-            paginationSpeed: 300,
-			autoplay: true,
-			items:4,
+            autoPlay: true,
+            autoplayTimeout:2000,
+			items:3,
 			dots:false,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
@@ -281,10 +279,10 @@
 					items:2
 				},
 				1024:{
-					items:3
+					items:4
 				},
 				1200:{
-					items:3
+					items:4
 				}
 			}
 		});
