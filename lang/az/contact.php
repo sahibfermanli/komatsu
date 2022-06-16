@@ -6,7 +6,7 @@ return [
     'visit_our_office' => 'Ofisimizi ziyarət edin',
     'mail' => 'Bizə poçt göndərin',
     'phone' => 'Bizə zəng edin',
-    'social' => 'Biz sosialyıq',
+    'social' => 'Biz sosialıq',
     'working_hours' => 'İŞ SAATLARI',
     'working_hours_desc' => 'Sizi görməyi səbirsizliklə gözləyirik',
     'monday' => 'Bazar ertəsi',

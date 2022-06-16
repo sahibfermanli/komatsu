@@ -394,7 +394,7 @@ table tr th {
 .secpadd{padding:70px 0px;}
 .secpadd2{padding:70px 0 40px;}
 .secpaddbig{padding:100px 0 70px;}
-.secpaddlf{padding-top:80px;padding-bottom:80px;}
+.secpaddlf{padding-top:80px;}
 
 
 @-webkit-keyframes fadeIn {
@@ -5398,6 +5398,7 @@ ul.service-menu .children li:last-child {
   padding: 30px;
   border: 1px solid #efefef;
   text-align: center;
+    height: 272px;
 }
 .fh-icon-box.style-1.no-border {
   border: none;
@@ -5575,7 +5576,7 @@ ul.service-menu .children li:last-child {
 }
 .fh-service-box.style-1 {
   padding: 25px 20px;
-    height:200px;
+    height:228px;
   border: 1px solid #232951;
 }
 .fh-service-box.style-1 .fh-icon,

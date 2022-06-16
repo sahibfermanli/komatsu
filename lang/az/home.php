@@ -9,10 +9,8 @@ return [
     'service2_desc' => 'AzEquip MMC  satış sonrası yükləyicilərin təmir işlərini yerinə yetirir.',
     'service3' => 'İcarə',
     'service3_desc' => 'Müxtəlif yükgötürmə qabiliyyətli yükləyicilərin icarəsi mövcuddur.',
-    'special_services' => 'Our Special SERVICES',
-    'special_services_desc' => 'Our warehousing services are known nationwide to be one of the most reliable, safe and
-                            affordable, because we take pride in delivering the best of warehousing services, at the
-                            most reasonable prices.',
+    'special_services' => 'XÜSUSİ XİDMƏTLƏRİMİZ',
+    'special_services_desc' => 'Bizim anbar xidmətlərimiz bütün ölkə üzrə ən etibarlı, təhlükəsiz və sərfəli xidmətlərdən biri kimi tanınır, çünki biz ən yaxşı anbar xidmətlərini ən münasib qiymətlərlə təqdim etməkdən qürur duyuruq.',
     'special_service1' => 'Servis xidməti',
     'special_service1_desc' => 'Package and store your things effectively and securely to make sure them in storage.',
     'special_service2' => 'İcarə',
