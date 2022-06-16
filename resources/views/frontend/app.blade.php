@@ -18,8 +18,7 @@
     <link href="{{asset('frontend/css/jquery.fancybox.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/css/hover.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/css/fronten.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
-    <!-- switcher css -->
+    <link href="{{asset('frontend/css/style.css?ver=1.1')}}" rel="stylesheet">    <!-- switcher css -->
     <link href="{{asset('frontend/css/switcher.css')}}" rel="stylesheet">
     <!-- revolution slider css -->
     <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/settings.css')}}">
@@ -77,7 +76,7 @@
 <script type="text/javascript" src="{{asset('frontend/js/slideanims.min.js')}}"></script>
 <script src="{{asset('frontend/js/scripts.min.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-<script src="{{asset('frontend/js/script.js')}}"></script>
+<script src="{{asset('frontend/js/script.js?ver=1.1')}}"></script>
 @yield('js')
 </body>
 </html>

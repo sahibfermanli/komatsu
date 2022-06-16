@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'welcome' => 'Welcome to <span class="main-color">KOMATSU</span>',
+    'welcome' => ' <span class="main-color">KOMATSU</span>-ya xoş gəlmisiniz',
     'welcome_desc' => 'Komatsu-nu seçməklə siz fəaliyyət sahəsində yükünüzün çeşidlənməsi, yükləmə-boşaltma prosesində davamlı və keyfiyyətli nəticə əldə edirsiniz.',
     'service1' => 'Satış',
     'service1_desc' => 'AzEquip MMC Komatsu- nun Azərbaycandakı rəsmi nümayəndəsi olaraq yükləyicilərin satışını həyata keçirir.',
