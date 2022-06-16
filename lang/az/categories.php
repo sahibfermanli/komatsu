@@ -12,7 +12,7 @@ return [
     'fast_worldwide_delivery_desc' => 'Müştərilərimizin məmnuniyyəti bizim üçün dəyərlidir.',
     'safe_and_secure_services' => '1 illik zavod zəmanəti',
     'safe_and_secure_services_desc' => 'Qurğularımızın zavod defektinə görə zəmanət veririk.',
-    'customer_support' => '24/7 müştəri xidməti',
+    'customer_support' => 'Müştəri xidməti',
     'customer_support_desc' => 'Operatorlarımız sizə xidmətə hazırdır',
     'the_complete_solution' => 'Tam həll yolu',
     'the_complete_solution_desc' => '<p>Bizim anbar xidmətlərimiz bütün ölkə üzrə ən etibarlı, təhlükəsiz və sərfəli xidmətlərdən biri kimi tanınır, çünki biz ən yaxşı anbar xidmətlərini ən münasib qiymətlərlə təqdim etməkdən qürur duyuruq.</p>',

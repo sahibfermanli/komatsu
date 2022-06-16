@@ -12,7 +12,7 @@ return [
     'fast_worldwide_delivery_desc' => 'Satisfaction of our customers is valuable for us.',
     'safe_and_secure_services' => '1 year factory warranty',
     'safe_and_secure_services_desc' => 'We guarantee the factory defect of our devices.',
-    'customer_support' => '24/7 customer support',
+    'customer_support' => 'Customer support',
     'customer_support_desc' => 'Our operators are ready to serve you.',
     'the_complete_solution' => 'The Complete Solution',
     'the_complete_solution_desc' => '<p>Our warehousing services are recognized as one of the most reliable, secure and affordable services throughout the country, as we are proud to provide the best warehousing services at the most affordable prices.</p>',

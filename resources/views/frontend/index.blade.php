@@ -1,6 +1,6 @@
 @extends('frontend.app')
 
-@section('title', 'Home page')
+@section('title', __('menu.komatsu'))
 
 @section('content')
     <section class="rev_slider_wrapper">
@@ -163,7 +163,7 @@
             <div class="welservices row">
                 <div class="col-md-4 col-sm-6">
                     <div class="fh-icon-box icon-type-theme_icon style-1 version-dark hide-button icon-left">
-                        <span class="fh-icon"><i class="flaticon-transport-3"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/sale.png')}}" alt=""/></span>
                         <h4 class="box-title"><a href="#">@lang('home.service1')</a></h4>
                         <div class="desc">
                             <p>@lang('home.service1_desc')</p>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="fh-icon-box icon-type-theme_icon style-1 version-dark hide-button icon-left">
-                        <span class="fh-icon"><i class="flaticon-transport-4"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/support.png')}}" alt="" style="width:75px;"/></span>
                         <h4 class="box-title"><a href="#">@lang('home.service2')</a></h4>
                         <div class="desc">
                             <p>@lang('home.service2_desc')</p>
@@ -181,7 +181,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="fh-icon-box icon-type-theme_icon style-1 version-dark hide-button icon-left">
-                        <span class="fh-icon"><i class="flaticon-transport-5"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/rent.png')}}" alt="" /></span>
                         <h4 class="box-title"><a href="#">@lang('home.service3')</a></h4>
                         <div class="desc">
                             <p>@lang('home.service3_desc')</p>
@@ -209,7 +209,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><i class="flaticon-open-cardboard-box"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/service.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service1')</a>
                         </h4>
@@ -218,7 +218,7 @@
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><i class="flaticon-buildings"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/rent2.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service2')</a></h4>
                         <div class="desc">
@@ -228,7 +228,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><i class="flaticon-transport-9"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/order.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service3')</a></h4>
                         <div class="desc">
@@ -236,7 +236,7 @@
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><i class="flaticon-transport-2"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/tires.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service4')</a>
                         </h4>
@@ -247,7 +247,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><i class="flaticon-international-delivery"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/waranty.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service5')</a></h4>
                         <div class="desc">
@@ -255,7 +255,7 @@
                         </div>
                     </div>
                     <div class="fh-service-box icon-type-theme_icon style-1">
-                        <span class="fh-icon"><i class="flaticon-transport-1"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/warehouse.png')}}" alt=""/></span>
                         <h4 class="service-title"><a href="#" class="link"
                                                      target="_blank">@lang('home.special_service6')</a></h4>
                         <div class="desc">
@@ -275,7 +275,7 @@
                         <h2>@lang('home.why_choosing_us')</h2>
                     </div>
                     <div class="fh-icon-box  style-2 icon-left has-line">
-                        <span class="fh-icon"><i class="flaticon-international-delivery"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/reliable.png')}}" alt=""/></span>
                         <h4 class="box-title"><span>@lang('home.why_choosing_us1')</span></h4>
                         <div class="desc">
                             <p>@lang('home.why_choosing_us1_desc')</p>
@@ -289,7 +289,7 @@
                         </div>
                     </div>
                     <div class="fh-icon-box  style-2 icon-left has-line">
-                        <span class="fh-icon"><i class="flaticon-route"></i></span>
+                        <span class="fh-icon"><img src="{{asset('frontend/image/agree.png')}}" alt=""/></span>
                         <h4 class="box-title"><span>@lang('home.why_choosing_us3')</span></h4>
                         <div class="desc">
                             <p>@lang('home.why_choosing_us3_desc')</p>

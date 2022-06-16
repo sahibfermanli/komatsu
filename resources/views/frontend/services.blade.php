@@ -44,8 +44,8 @@
                             <div class="fh-service-box-2   box-style-1  no-thumb">
                                 <div class="box-thumb"></div>
                                 <div class="box-wrapper">
-                                    <div class="box-header clearfix"><span class="fh-icon"><i
-                                                class="flaticon-transport-7"></i></span>
+                                    <div class="box-header clearfix"><span class="fh-icon">
+                                            <img src="{{asset('frontend/image/serv.png')}}" alt=""/></span>
                                         <h4 class="box-title">@lang('services.safety1')</h4><span
                                             class="sub-title main-color">@lang('services.safety1_small')</span></div>
                                     <div class="box-content">
@@ -58,8 +58,8 @@
                             <div class="fh-service-box-2  box-style-1  no-thumb">
                                 <div class="box-thumb"></div>
                                 <div class="box-wrapper">
-                                    <div class="box-header clearfix"><span class="fh-icon"><i
-                                                class="flaticon-transport-10"></i></span>
+                                    <div class="box-header clearfix"><span class="fh-icon">
+                                            <img src="{{asset('frontend/image/ware.png')}}" alt=""/></span>
                                         <h4 class="box-title">@lang('services.safety2')</h4><span
                                             class="sub-title main-color">@lang('services.safety2_small')</span></div>
                                     <div class="box-content">

@@ -28,7 +28,7 @@ return [
     'why_choosing_us' => 'Why Choosing us?',
     'why_choosing_us1' => 'Reliable product',
     'why_choosing_us1_desc' => 'The product presented by us has proved its reliability all over the world.',
-    'why_choosing_us2' => '24 Hours - Technical Support',
+    'why_choosing_us2' => 'Technical Support',
     'why_choosing_us2_desc' => 'Specialises in international freight forwarding of merchandise and associated logistic
                                 services',
     'why_choosing_us3' => 'Satisfied customer',

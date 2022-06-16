@@ -28,7 +28,7 @@ return [
     'why_choosing_us' => 'NİYƏ BİZİ SEÇİRSİNİZ?',
     'why_choosing_us1' => 'Etibarlı məhsul',
     'why_choosing_us1_desc' => 'Biz tərəfdən təqdim olunan məhsul öz etibarlılığını bütün dünyada təstiq etmişdir.',
-    'why_choosing_us2' => '24 Saat - Texniki Dəstək',
+    'why_choosing_us2' => ' Texniki Dəstək',
     'why_choosing_us2_desc' => 'Texniki dəstək xidmətimiz sizin çətin anda köməyinizə çatmağa hər an hazırdır.',
     'why_choosing_us3' => 'Məmnun müştəri',
     'why_choosing_us3_desc' => '300-dən artıq məmnun müştəri kütləmiz var',
